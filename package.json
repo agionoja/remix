@@ -28,6 +28,7 @@
     "create-github-release:preview": "node ./scripts/create-github-release.ts --preview",
     "docs": "rm -rf docs/api && node docs/generate.ts",
     "docs:serve": "node docs/server.ts",
+    "generate-remix": "node scripts/generate-remix.ts",
     "lint": "eslint . --max-warnings=0",
     "lint:fix": "eslint . --fix",
     "test": "pnpm --parallel run test",
