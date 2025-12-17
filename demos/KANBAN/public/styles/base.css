@@ -1,0 +1,297 @@
+/* ==========================================================================
+   CSS RESET
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+}
+
+input,
+textarea,
+select {
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+input.error,
+textarea.error,
+select.error {
+  border-color: var(--color-error);
+}
+
+input.error:focus,
+textarea.error:focus,
+select.error:focus {
+  border-color: var(--color-error);
+  box-shadow: 0 0 0 3px var(--color-error-light);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--bg-primary) inset !important;
+  -webkit-text-fill-color: var(--text-primary) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px var(--bg-primary) inset !important;
+  -webkit-text-fill-color: var(--text-primary) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY - HEADINGS
+   Fluid typography using clamp() for responsive sizing
+   ========================================================================== */
+
+h1,
+.h1 {
+  font-size: clamp(2.7rem, 2rem + 2vw, 3.6rem);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--text-heading);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h2,
+.h2 {
+  font-size: clamp(2.25rem, 1.75rem + 1.5vw, 3rem);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--text-heading);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h3,
+.h3 {
+  font-size: clamp(1.8rem, 1.5rem + 1vw, 2.4rem);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  color: var(--text-heading);
+}
+
+h4,
+.h4 {
+  font-size: clamp(1.6rem, 1.4rem + 0.5vw, 2rem);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  color: var(--text-heading);
+}
+
+h5,
+.h5 {
+  font-size: clamp(1.4rem, 1.3rem + 0.3vw, 1.8rem);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  color: var(--text-subheading);
+}
+
+h6,
+.h6 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  color: var(--text-subheading);
+}
+
+/* ==========================================================================
+   TYPOGRAPHY - BODY TEXT
+   ========================================================================== */
+
+.text-body-lg {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+  color: var(--text-body);
+}
+
+.text-body {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--text-body);
+}
+
+.text-body-sm {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--text-body);
+}
+
+.text-body-xs {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--text-body);
+}
+
+/* ==========================================================================
+   TYPOGRAPHY - LABELS
+   ========================================================================== */
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  color: var(--text-subheading);
+}
+
+.label-sm {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  color: var(--text-tertiary);
+}
+
+/* ==========================================================================
+   TYPOGRAPHY - DISPLAY TEXT
+   For large numbers/stats (non-heading text)
+   ========================================================================== */
+
+.display {
+  font-size: clamp(2.4rem, 1.8rem + 1.5vw, 3.6rem);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--text-heading);
+}
+
+/* ==========================================================================
+   ACCESSIBILITY - REDUCED MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
