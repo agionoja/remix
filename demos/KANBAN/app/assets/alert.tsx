@@ -1,17 +1,17 @@
+import type { CSSMap } from '#/+types'
+import type { Flash } from '#/schema/flash'
 import { routes } from '#/🔄'
 import { hydrated, type Remix } from '@remix-run/dom'
 import { dom } from '@remix-run/events'
 
-export type AlertVariant = 'error' | 'success' | 'warning' | 'info'
-
 type AlertProps = {
-  variant?: AlertVariant
+  variant?: Flash['type']
   children: Remix.RemixNode
   css: Remix.Props<'div'>['css']
   allowCancel?: boolean
 }
 
-const alertStyles: Record<string, AlertProps['css']> = {
+const alertStyles: CSSMap = {
   error: {
     backgroundColor: 'var(--color-error-light)',
     color: 'var(--color-error-700)',
