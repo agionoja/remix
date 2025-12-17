@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0acfe6d7-d7ef-4a56-ae06-9249235f53a3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+        <option value="TypeScript File" />
+        <option value="CSS File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="demo/inventory-management-updated" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="demo/KABAN" />
+                    <option name="lastUsedInstant" value="1765913988" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1765913524" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="brophdawg11/remix-package" />
+                    <option name="lastUsedInstant" value="1765880169" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="markdalgleish/auth-spike" />
+                    <option name="lastUsedInstant" value="1765879885" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="pedro/route-pattern-trie" />
+                    <option name="lastUsedInstant" value="1765878665" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="364dq5RxN7Re3rnLzp9IS8TQm81" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js Test Runner.AppStorage.allows `null` as a valid default value.executor": "Run",
+    "Node.js Test Runner.AppStorage.executor": "Run",
+    "Node.js Test Runner.account handlers.GET /account redirects to login when not authenticated.executor": "Run",
+    "Node.js Test Runner.colorizer.test.ts.executor": "Run",
+    "Node.js Test Runner.compressResponse().executor": "Run",
+    "Node.js Test Runner.cookie.test.ts.executor": "Run",
+    "Node.js Test Runner.regexp-matcher.test.ts.executor": "Run",
+    "Node.js Test Runner.router.any().executor": "Run",
+    "Node.js Test Runner.router.fetch().executor": "Run",
+    "Node.js Test Runner.router.test.ts.executor": "Run",
+    "Node.js Test Runner.runMiddleware.executor": "Run",
+    "Node.js Test Runner.trie-matcher.test.ts.executor": "Run",
+    "Node.js.bench > comparison.bench.ts.executor": "Run",
+    "Node.js.bench > find-my-way-vs-route-pattern-bench.ts.executor": "Run",
+    "Node.js.bench > runner.ts.executor": "Run",
+    "Node.js.docs > generate.ts.executor": "Run",
+    "Node.js.docs > server.ts.executor": "Run",
+    "Node.js.http2 > server.js.executor": "Run",
+    "Node.js.inventory-management > router.ts.executor": "Run",
+    "Node.js.list-files > server.js.executor": "Run",
+    "Node.js.node > server.ts.executor": "Run",
+    "Node.js.route-pattern > comparison.bench.ts.executor": "Run",
+    "Node.js.route-pattern > demo.ts.executor": "Run",
+    "Node.js.route-pattern > enterprise-routing-benchmark.ts.executor": "Run",
+    "Node.js.route-pattern > http-routing-benchmark.ts.executor": "Run",
+    "Node.js.route-pattern > params.types.bench.ts.executor": "Run",
+    "Node.js.sse > server.ts.executor": "Run",
+    "Node.js.unpkg > npm.ts.executor": "Run",
+    "Node.js.unpkg > router.ts.executor": "Run",
+    "Node.js.unpkg > server.ts.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHELLCHECK.PATH": "/home/agionoja/.local/share/JetBrains/WebStorm2025.2/Shell Script/shellcheck",
+    "Vitest.match.executor": "Run",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "demo/KABAN",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/agionoja/Code/remix/demos/KANBAN",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "pnpm",
+    "npm.KANBAN > dev.executor": "Run",
+    "npm.KANBAN > dev:browser.executor": "Run",
+    "npm.bench > bench.executor": "Run",
+    "npm.bench > build.executor": "Run",
+    "npm.bench > start.executor": "Run",
+    "npm.bookstore > dev.executor": "Run",
+    "npm.bookstore > dev:browser.executor": "Run",
+    "npm.bun > start.executor": "Run",
+    "npm.cf-workers > db:migrate.executor": "Run",
+    "npm.cf-workers > deploy.executor": "Run",
+    "npm.cf-workers > dev.executor": "Run",
+    "npm.chat > dev.executor": "Run",
+    "npm.chat > dev:browser.executor": "Run",
+    "npm.chat > dev:live.executor": "Run",
+    "npm.chat > dev:server.executor": "Run",
+    "npm.codegen.executor": "Run",
+    "npm.component > test.executor": "Run",
+    "npm.demos > start.executor": "Run",
+    "npm.docs.executor": "Run",
+    "npm.docs:serve.executor": "Run",
+    "npm.fetch-router > build.executor": "Run",
+    "npm.fetch-router > test.executor": "Run",
+    "npm.headers > test.executor": "Run",
+    "npm.inventory-management > dev.executor": "Run",
+    "npm.inventory-management > typecheck.executor": "Run",
+    "npm.route-pattern > bench.executor": "Run",
+    "npm.route-pattern > bench:types.executor": "Run",
+    "npm.route-pattern > build.executor": "Run",
+    "npm.route-pattern > test.executor": "Run",
+    "npm.route-pattern > typecheck.executor": "Run",
+    "npm.sse > dev.executor": "Run",
+    "npm.sse > dev:browser.executor": "Run",
+    "npm.sse > dev:server.executor": "Run",
+    "npm.tar-parser > bench.executor": "Run",
+    "npm.typecheck.executor": "Run",
+    "npm.view-changes.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "/home/agionoja/Code/remix/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/home/agionoja/.bun/install/global/node_modules/@typescript/native-preview-linux-x64/lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demos/KANBAN/public/icons" />
+      <recent name="$PROJECT_DIR$/demos/KANBAN" />
+      <recent name="$PROJECT_DIR$/demos/inventory-management" />
+      <recent name="$PROJECT_DIR$/demos/inventory-management/public" />
+      <recent name="$PROJECT_DIR$/demos/inventory-management/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demos/KANBAN/public/icons" />
+      <recent name="$PROJECT_DIR$/demos/KANBAN/public/styles" />
+      <recent name="$PROJECT_DIR$/demos/inventory-management/app/views/admin" />
+      <recent name="$PROJECT_DIR$/demos/inventory-management/app" />
+      <recent name="$PROJECT_DIR$/demos/inventory-management" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.docs:serve">
+    <configuration name="component &gt; test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/component/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="docs" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docs" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="docs:serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docs:serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.docs:serve" />
+        <item itemvalue="npm.docs" />
+        <item itemvalue="npm.component &gt; test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-WS-253.28294.332" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0acfe6d7-d7ef-4a56-ae06-9249235f53a3" name="Changes" comment="" />
+      <created>1764269965288</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764269965288</updated>
+      <workItem from="1764269967921" duration="1089000" />
+      <workItem from="1764271060715" duration="13813000" />
+      <workItem from="1764304738691" duration="59170000" />
+      <workItem from="1764418516473" duration="47763000" />
+      <workItem from="1764547193147" duration="21000" />
+      <workItem from="1764581015343" duration="141000" />
+      <workItem from="1764581174244" duration="347000" />
+      <workItem from="1764581527664" duration="17767000" />
+      <workItem from="1764621315747" duration="9676000" />
+      <workItem from="1764706793736" duration="183000" />
+      <workItem from="1764710311808" duration="30610000" />
+      <workItem from="1764807723922" duration="14394000" />
+      <workItem from="1764870615542" duration="39527000" />
+      <workItem from="1765048700043" duration="271000" />
+      <workItem from="1765060847021" duration="34151000" />
+      <workItem from="1765282031053" duration="19000" />
+      <workItem from="1765282834749" duration="14425000" />
+      <workItem from="1765314714989" duration="6266000" />
+      <workItem from="1765354859653" duration="65615000" />
+      <workItem from="1765538845611" duration="27414000" />
+      <workItem from="1765581075334" duration="328000" />
+      <workItem from="1765581773341" duration="35384000" />
+      <workItem from="1765647775010" duration="975000" />
+      <workItem from="1765651012105" duration="28203000" />
+      <workItem from="1765801043829" duration="7058000" />
+      <workItem from="1765829487168" duration="15000" />
+      <workItem from="1765877861265" duration="2378000" />
+      <workItem from="1765901757407" duration="2307000" />
+      <workItem from="1765905208380" duration="3802000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
