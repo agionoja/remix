@@ -1,7 +1,7 @@
-// +types.ts
-import type { AlertVariant } from '#/assets/alert'
+import { type Remix } from '@remix-run/dom'
 
-export type Flash = {
-  flashText?: string
-  flashType?: AlertVariant
-}
+export type CSS = Remix.Props<'div'>['css']
+
+export type CSSValue = CSS | (() => CSS)
+
+export type CSSMap = { [K in string]: CSSValue }
