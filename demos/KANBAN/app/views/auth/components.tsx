@@ -1,5 +1,6 @@
-import type { Flash } from '#/+types'
 import { Alert } from '#/assets/alert'
+import { LogoIcon } from '#/components/icons'
+import type { Flash } from '#/schema/flash'
 import type { Remix } from '@remix-run/dom'
 import type { RequestMethod } from '@remix-run/fetch-router'
 
@@ -21,17 +22,15 @@ export function AuthLayout({ children }: { children: Remix.RemixNode }) {
         },
       }}
     >
-      <img
+      <LogoIcon
+        height={300}
+        width={300}
         css={{
           display: 'none',
           '@media (min-width: 768px)': {
             display: 'block',
           },
         }}
-        height={300}
-        width={300}
-        src="/icons/Logo.svg"
-        alt="Kanban Logo"
       />
       {children}
     </main>
@@ -48,8 +47,7 @@ export function AuthHeader({ title, message }: { title: string; message: string 
         alignItems: 'center',
       }}
     >
-      <img height={48} width={48} src="/icons/Logo.svg" alt="Kanban Logo" />
-
+      <LogoIcon />
       <div
         css={{
           display: 'flex',
@@ -81,8 +79,8 @@ export function AuthHeader({ title, message }: { title: string; message: string 
 export function AuthFormLayout({
   css,
   children,
-  flashText,
-  flashType,
+  message,
+  type,
   ...rest
 }: Flash & Remix.Props<'div'>) {
   return (
@@ -98,9 +96,9 @@ export function AuthFormLayout({
         ...css,
       }}
     >
-      {flashText && (
-        <Alert variant={flashType} css={{ marginBottom: 'var(--space-4)' }}>
-          {flashText}
+      {message && (
+        <Alert variant={type} css={{ marginBottom: 'var(--space-4)' }}>
+          {message}
         </Alert>
       )}
 

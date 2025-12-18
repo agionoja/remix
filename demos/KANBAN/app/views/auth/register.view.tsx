@@ -1,7 +1,8 @@
-import type { Flash } from '#/+types'
 import { Button } from '#/components/button'
+import { GoogleIcon } from '#/components/icons'
 import { Input } from '#/components/input'
 import { Document } from '#/components/layout'
+import type { Flash } from '#/schema/flash'
 import { createMeta } from '#/utils/meta'
 import {
   AuthForm,
@@ -81,7 +82,7 @@ export function RegisterView(props: Flash) {
                 width: '100%',
               }}
             >
-              <img src="/icons/Google.svg" alt="Google icon" />
+              <GoogleIcon />
               <span>Sign up with Google</span>
             </Button>
           </form>
@@ -89,7 +90,7 @@ export function RegisterView(props: Flash) {
           <p css={{ textAlign: 'center' }}>
             Already have an account?{' '}
             <a href={routes.auth.login.index.href()}>
-              <strong css={{ color: 'var(--color-primary)' }}>Log in</strong>
+              <strong css={{ color: 'var(--primary)' }}>Log in</strong>
             </a>
           </p>
         </AuthFormLayout>

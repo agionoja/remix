@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f8716a9-b3e6-48e3-9c59-622ff06378fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/assets/sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/icons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.store.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.store.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.suppliers.controller.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/auth.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/schema/flash.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/schema/flash.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/components.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/components.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/forgot-password.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/forgot-password.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/login.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/login.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/register.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/register.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/reset-password.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/reset-password.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/Manage Store.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/token.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/token.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pnpm-lock.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="component" />
+                    <option name="lastUsedInstant" value="1766071808" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="pedro/route-pattern-trie" />
+                    <option name="lastUsedInstant" value="1766071526" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="demo/KABAN" />
+                    <option name="lastUsedInstant" value="1766071525" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/../.." />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="36ytZhbtop8sLWwqYFNJwJDxLnQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "demo/KABAN",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "/home/agionoja/.nvm/versions/node/v24.11.1/bin/pnpm",
+    "npm.dev.executor": "Run",
+    "npm.dev:browser.executor": "Run",
+    "npm.start.executor": "Run",
+    "npm.typecheck.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "/home/agionoja/.nvm/versions/node/v24.11.1/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/home/agionoja/Code/remix/node_modules/.pnpm/@typescript+native-preview@7.0.0-dev.20251125.1/node_modules/@typescript/native-preview-linux-x64/lib"
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev:browser" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev:browser" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="typecheck" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="typecheck" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.dev:browser" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.typecheck" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-WS-253.28294.332" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f8716a9-b3e6-48e3-9c59-622ff06378fa" name="Changes" comment="" />
+      <created>1765990695621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765990695621</updated>
+      <workItem from="1765990696884" duration="35023000" />
+      <workItem from="1766085084196" duration="845000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,4 +1,4 @@
-import type { Flash } from '#/+types'
+import { flash } from '#/schema/flash'
 import { render } from '#/utils/render'
 import { ForgotPasswordView } from '#/views/auth/forgot-password.view'
 import { LoginView } from '#/views/auth/login.view'
@@ -16,11 +16,12 @@ export default {
 
   login: {
     index(ctx) {
+      let authFlash = flash.assert(ctx.session.get('flash') || {})
       let action = routes.auth.login.action.href(undefined, {
         redirectTo: ctx.url.searchParams.get('redirectTo'),
       })
 
-      return render(<LoginView {...(ctx.session.get('flash') as Flash)} action={action} />)
+      return render(<LoginView {...authFlash} action={action} />)
     },
 
     action(ctx) {
@@ -31,7 +32,6 @@ export default {
 
   register: {
     index(ctx) {
-      ctx.storage
       return render(<RegisterView />)
     },
 
@@ -63,8 +63,8 @@ export default {
 
     action(ctx) {
       ctx.session.flash('flash', {
-        flashText: 'Password reset Successfully. Log in to continue.',
-        flashType: 'warning',
+        message: 'Password reset Successfully. Log in to continue.',
+        type: 'success',
       })
       return createRedirectResponse(routes.auth.login.index.href())
     },

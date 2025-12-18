@@ -19,7 +19,7 @@ export default {
     inventory: adminInventoryController,
     orders: adminOrdersController,
     report: adminReportController,
-    store: adminStoreController,
+    stores: adminStoreController,
     suppliers: adminSuppliersController,
   },
 } satisfies Controller<typeof routes.admin>
