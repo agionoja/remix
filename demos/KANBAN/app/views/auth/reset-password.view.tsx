@@ -1,7 +1,7 @@
-import type { Flash } from '#/+types'
 import { Button } from '#/components/button'
 import { Input } from '#/components/input'
 import { Document } from '#/components/layout'
+import type { Flash } from '#/schema/flash'
 import { createMeta } from '#/utils/meta'
 import {
   AuthForm,

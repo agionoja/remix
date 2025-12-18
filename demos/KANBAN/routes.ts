@@ -24,7 +24,7 @@ export const routes = route({
 
   admin: route('/admin', {
     search: get('/search'),
-    store: resources('/store', { param: 'storeId' }),
+    stores: resources('/stores', { param: 'storeId' }),
 
     suppliers: route('/suppliers', {
       export: get('/export'),

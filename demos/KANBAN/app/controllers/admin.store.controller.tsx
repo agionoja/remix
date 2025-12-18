@@ -34,4 +34,4 @@ export default {
   destroy(ctx) {
     return new Response('')
   },
-} satisfies Controller<typeof routes.admin.store>
+} satisfies Controller<typeof routes.admin.stores>

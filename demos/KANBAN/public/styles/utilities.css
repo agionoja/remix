@@ -1,44 +1,10 @@
-.text-heading {
-  color: var(--text-heading);
-}
-.text-subheading {
-  color: var(--text-subheading);
-}
-.text-body-color {
-  color: var(--text-body);
-}
-.text-primary {
-  color: var(--text-primary);
-}
-.text-secondary {
-  color: var(--text-secondary);
-}
-.text-tertiary {
-  color: var(--text-tertiary);
-}
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
 
-.gap-xs {
-  gap: var(--space-2);
-}
-.gap-sm {
-  gap: var(--space-3);
-}
-.gap-md {
-  gap: var(--space-4);
-}
-.gap-lg {
-  gap: var(--space-6);
-}
-.gap-xl {
-  gap: var(--space-8);
-}
-
-.p-card {
-  padding: var(--space-card-padding);
-}
-.p-sidebar {
-  padding: var(--space-sidebar-padding);
-}
+/* ============================================
+   LAYOUT
+   ============================================ */
 
 .container {
   max-width: var(--breakpoint-2xl);
@@ -52,17 +18,27 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+/* ============================================
+   CARD
+   ============================================ */
+
 .card {
   background-color: var(--surface-card);
+  color: var(--foreground);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-sm);
-  padding: var(--space-card-padding);
+  padding: var(--space-6);
+  border: 1px solid var(--border);
   transition: box-shadow var(--transition-base);
 }
 
 .card:hover {
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-base);
 }
+
+/* ============================================
+   BADGES
+   ============================================ */
 
 .badge {
   display: inline-flex;
@@ -75,22 +51,95 @@
 }
 
 .badge-success {
-  background-color: var(--color-success-light);
-  color: var(--color-success);
+  background-color: var(--success-background);
+  color: var(--success);
 }
 
 .badge-warning {
-  background-color: var(--color-warning-light);
-  color: var(--color-warning);
+  background-color: var(--warning-background);
+  color: var(--warning);
 }
 
 .badge-error {
-  background-color: var(--color-error-light);
-  color: var(--color-error);
+  background-color: var(--error-background);
+  color: var(--error);
 }
+
+.badge-info {
+  background-color: var(--info-background);
+  color: var(--info);
+}
+
+/* ============================================
+   SPACING UTILITIES
+   ============================================ */
+
+.gap-xs {
+  gap: var(--space-2);
+}
+
+.gap-sm {
+  gap: var(--space-3);
+}
+
+.gap-md {
+  gap: var(--space-4);
+}
+
+.gap-lg {
+  gap: var(--space-6);
+}
+
+.gap-xl {
+  gap: var(--space-8);
+}
+
+/* ============================================
+   TEXT COLOR UTILITIES
+   ============================================ */
+
+.text-heading {
+  color: var(--foreground);
+}
+
+.text-subheading {
+  color: var(--foreground-muted);
+}
+
+.text-body-color {
+  color: var(--foreground-muted);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-warning {
+  color: var(--warning);
+}
+
+.text-error {
+  color: var(--error);
+}
+
+.text-secondary {
+  color: var(--foreground-muted);
+}
+
+.text-tertiary {
+  color: var(--foreground-subtle);
+}
+
+/* ============================================
+   ERROR MESSAGES
+   ============================================ */
 
 .error-message {
   font-size: var(--font-size-xs);
-  color: var(--color-error);
+  color: var(--error);
   margin-top: var(--space-1);
 }

@@ -1,3 +1,4 @@
+import { Sidebar } from '#/assets/sidebar'
 import { routes } from '#/🔄'
 import type { Remix } from '@remix-run/dom'
 
@@ -64,5 +65,12 @@ export function Document({ meta, links, children, title }: Props) {
 }
 
 export function Layout({ children, ...rest }: Props) {
-  return <Document {...rest}>{children}</Document>
+  return (
+    <Document {...rest}>
+      <div css={{ display: 'flex' }}>
+        <Sidebar css={{ width: '20%' }} />
+        {children}
+      </div>
+    </Document>
+  )
 }

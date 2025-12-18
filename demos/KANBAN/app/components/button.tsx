@@ -9,31 +9,31 @@ interface ButtonProps extends Remix.Props<'button'> {
 const buttonStyles = {
   primary: {
     padding: 'var(--space-3) var(--space-6)',
-    backgroundColor: 'var(--color-primary)',
-    color: 'white',
+    backgroundColor: 'var(--primary)',
+    color: 'var(--primary-foreground)',
     border: 'none',
     '&:hover': {
-      backgroundColor: 'var(--color-primary-hover)',
+      backgroundColor: 'color-mix(in srgb, var(--primary) 90%, black)',
     },
   },
   secondary: {
     padding: 'var(--space-3) var(--space-6)',
     backgroundColor: 'var(--surface-card)',
-    color: 'var(--text-primary)',
-    border: '1px solid var(--border-primary)',
+    color: 'var(--foreground)',
+    border: '1px solid var(--border)',
     '&:hover': {
-      backgroundColor: 'var(--bg-hover)',
-      borderColor: 'var(--border-secondary)',
+      backgroundColor: 'var(--background-hover)',
+      borderColor: 'var(--border-strong)',
     },
   },
   tertiary: {
     padding: 'var(--space-3) var(--space-6)',
-    backgroundColor: 'var(--bg-secondary)',
-    color: 'var(--color-primary)',
-    border: '1px solid var(--border-primary)',
+    backgroundColor: 'var(--background-muted)',
+    color: 'var(--primary)',
+    border: '1px solid var(--border)',
     '&:hover': {
-      backgroundColor: 'var(--bg-hover)',
-      borderColor: 'var(--border-secondary)',
+      backgroundColor: 'var(--background-hover)',
+      borderColor: 'var(--border-strong)',
     },
   },
 }

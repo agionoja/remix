@@ -1,59 +1,40 @@
-/* ==========================================================================
-   CSS RESET
-   ========================================================================== */
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-* {
   margin: 0;
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 html {
-  font-size: 10px;
+  font-size: 10px; /* Base: 1rem = 10px */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-size-adjust: 100%;
 }
 
 body {
-  font-family: var(--font-sans);
+  min-height: 100vh;
+  font-family: var(--font-family);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-normal);
-  color: var(--text-primary);
-  background-color: var(--bg-secondary);
-  transition:
-    background-color var(--transition-base),
-    color var(--transition-base);
+  color: var(--foreground);
+  background-color: var(--background-muted);
+  transition: background-color var(--transition-base), color var(--transition-base);
 }
+
+/* ============================================
+   ELEMENTS
+   ============================================ */
 
 ul,
 ol {
   list-style: none;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-}
-
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
 a {
@@ -66,6 +47,21 @@ a:hover {
   opacity: 0.8;
 }
 
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
 img,
 picture,
 video,
@@ -73,63 +69,6 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
-}
-
-input[type='checkbox'],
-input[type='radio'] {
-  width: 1.6rem;
-  height: 1.6rem;
-  cursor: pointer;
-  accent-color: var(--color-primary);
-}
-
-input,
-textarea,
-select {
-  transition:
-    border-color var(--transition-fast),
-    box-shadow var(--transition-fast);
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-  border-color: var(--border-focus);
-  box-shadow: 0 0 0 3px var(--color-primary-light);
-}
-
-input.error,
-textarea.error,
-select.error {
-  border-color: var(--color-error);
-}
-
-input.error:focus,
-textarea.error:focus,
-select.error:focus {
-  border-color: var(--color-error);
-  box-shadow: 0 0 0 3px var(--color-error-light);
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px var(--bg-primary) inset !important;
-  -webkit-text-fill-color: var(--text-primary) !important;
-  transition: background-color 5000s ease-in-out 0s;
-}
-
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 30px var(--bg-primary) inset !important;
-  -webkit-text-fill-color: var(--text-primary) !important;
-  transition: background-color 5000s ease-in-out 0s;
 }
 
 p,
@@ -142,10 +81,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-textarea {
-  resize: vertical;
-}
-
 fieldset {
   border: none;
 }
@@ -154,6 +89,68 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* ============================================
+   FORM ELEMENTS
+   ============================================ */
+
+input[type='checkbox'],
+input[type='radio'] {
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+  accent-color: var(--primary);
+}
+
+input,
+textarea,
+select {
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring) 10%, transparent);
+}
+
+input.error,
+textarea.error,
+select.error {
+  border-color: var(--error);
+}
+
+input.error:focus,
+textarea.error:focus,
+select.error:focus {
+  border-color: var(--error);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--error) 10%, transparent);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/*!* Autofill styles *!*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px var(--background) inset !important;
+  -webkit-text-fill-color: var(--foreground) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ============================================
+   FOCUS STYLES
+   ============================================ */
 
 :focus-visible {
   outline: 2px solid var(--border-focus);
@@ -164,17 +161,16 @@ table {
   outline: none;
 }
 
-/* ==========================================================================
-   TYPOGRAPHY - HEADINGS
-   Fluid typography using clamp() for responsive sizing
-   ========================================================================== */
+/* ============================================
+   TYPOGRAPHY - Fluid responsive headings
+   ============================================ */
 
 h1,
 .h1 {
   font-size: clamp(2.7rem, 2rem + 2vw, 3.6rem);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
-  color: var(--text-heading);
+  color: var(--foreground);
   letter-spacing: var(--letter-spacing-tight);
 }
 
@@ -183,7 +179,7 @@ h2,
   font-size: clamp(2.25rem, 1.75rem + 1.5vw, 3rem);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
-  color: var(--text-heading);
+  color: var(--foreground);
   letter-spacing: var(--letter-spacing-tight);
 }
 
@@ -192,7 +188,7 @@ h3,
   font-size: clamp(1.8rem, 1.5rem + 1vw, 2.4rem);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-normal);
-  color: var(--text-heading);
+  color: var(--foreground);
 }
 
 h4,
@@ -200,7 +196,7 @@ h4,
   font-size: clamp(1.6rem, 1.4rem + 0.5vw, 2rem);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-normal);
-  color: var(--text-heading);
+  color: var(--foreground);
 }
 
 h5,
@@ -208,7 +204,7 @@ h5,
   font-size: clamp(1.4rem, 1.3rem + 0.3vw, 1.8rem);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-normal);
-  color: var(--text-subheading);
+  color: var(--foreground-muted);
 }
 
 h6,
@@ -216,74 +212,34 @@ h6,
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-normal);
-  color: var(--text-subheading);
+  color: var(--foreground-muted);
 }
 
-/* ==========================================================================
-   TYPOGRAPHY - BODY TEXT
-   ========================================================================== */
+/* ============================================
+   TEXT UTILITIES
+   ============================================ */
 
-.text-body-lg {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-relaxed);
-  color: var(--text-body);
+.text-muted {
+  color: var(--foreground-muted);
+}
+
+.text-subtle {
+  color: var(--foreground-subtle);
 }
 
 .text-body {
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-normal);
-  color: var(--text-body);
+  color: var(--foreground-muted);
 }
-
-.text-body-sm {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-normal);
-  color: var(--text-body);
-}
-
-.text-body-xs {
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-normal);
-  color: var(--text-body);
-}
-
-/* ==========================================================================
-   TYPOGRAPHY - LABELS
-   ========================================================================== */
 
 .label {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-normal);
-  color: var(--text-subheading);
+  color: var(--foreground-muted);
 }
 
-.label-sm {
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-normal);
-  color: var(--text-tertiary);
-}
-
-/* ==========================================================================
-   TYPOGRAPHY - DISPLAY TEXT
-   For large numbers/stats (non-heading text)
-   ========================================================================== */
-
-.display {
-  font-size: clamp(2.4rem, 1.8rem + 1.5vw, 3.6rem);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-tight);
-  color: var(--text-heading);
-}
-
-/* ==========================================================================
-   ACCESSIBILITY - REDUCED MOTION
-   ========================================================================== */
+/* ============================================
+   ACCESSIBILITY - Reduced motion
+   ============================================ */
 
 @media (prefers-reduced-motion: reduce) {
   *,
