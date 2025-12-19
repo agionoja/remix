@@ -49,7 +49,7 @@ export function Sidebar({ css: _css = {}, url, ...rest }: Remix.Props<'aside'> &
           flex-direction: column;
           height: 100svh;
           width: var(--sidebar-width);
-          background-color: var(--sidebar-background);
+          background-color: var(--sidebar);
           border-right: 1px solid var(--sidebar-border);
           padding: var(--spacing-4);
         `,
