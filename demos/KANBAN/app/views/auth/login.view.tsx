@@ -72,14 +72,8 @@ export function LoginView({ action, ...rest }: { action: string } & Flash) {
                 <span class={'label'}>Remember for 30 days</span>
               </label>
 
-              <a
-                class="link-primary"
-                css={css`
-                  font-size: var(--text-2xs);
-                `}
-                href={routes.auth.forgotPassword.index.href()}
-              >
-                Forgot Password
+              <a class="link-primary" href={routes.auth.forgotPassword.index.href()}>
+                <strong>Forgot Password</strong>
               </a>
             </div>
 
