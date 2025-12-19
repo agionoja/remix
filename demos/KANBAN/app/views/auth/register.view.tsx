@@ -4,6 +4,7 @@ import { Input } from '#/components/input'
 import { Document } from '#/components/layout'
 import type { Flash } from '#/schema/flash'
 import { createMeta } from '#/utils/meta'
+import { css } from '#/utils/css'
 import {
   AuthForm,
   AuthFormLayout,
@@ -63,7 +64,13 @@ export function RegisterView(props: Flash) {
             </AuthLabel>
 
             <label>
-              <input type="checkbox" name={'remember'} css={{ marginRight: 'var(--spacing-2)' }} />
+              <input
+                type="checkbox"
+                name={'remember'}
+                css={css`
+                  margin-right: var(--spacing-2);
+                `}
+              />
               <span class={'label'}>Remember for 30 days</span>
             </label>
 
@@ -74,20 +81,24 @@ export function RegisterView(props: Flash) {
             <Button
               type={'submit'}
               variant={'secondary'}
-              css={{
-                display: 'flex',
-                gap: 'var(--spacing-4)',
-                justifyContent: 'center',
-                alignItems: 'center',
-                width: '100%',
-              }}
+              css={css`
+                display: flex;
+                gap: var(--spacing-4);
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+              `}
             >
               <GoogleIcon />
               <span>Sign up with Google</span>
             </Button>
           </form>
 
-          <p css={{ textAlign: 'center' }}>
+          <p
+            css={css`
+              text-align: center;
+            `}
+          >
             Already have an account?{' '}
             <a href={routes.auth.login.index.href()}>
               <strong class="link-primary">Log in</strong>

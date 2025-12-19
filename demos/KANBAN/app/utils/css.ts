@@ -1,14 +1,5 @@
 import type { CSS } from '#/+types'
 
-export type DOMStyleProperties = {
-  [K in keyof Omit<
-    CSSStyleDeclaration,
-    'item' | 'setProperty' | 'removeProperty' | 'getPropertyValue' | 'getPropertyPriority'
-  >]?: string | number | null
-}
-
-
-
 const kebabToCamel = (str: string): string =>
   str.replace(/-([a-z0-9])/g, (_, letter) => letter.toUpperCase()).trim()
 

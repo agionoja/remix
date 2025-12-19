@@ -4,6 +4,7 @@ import { Input } from '#/components/input'
 import { Document } from '#/components/layout'
 import type { Flash } from '#/schema/flash'
 import { createMeta } from '#/utils/meta'
+import { css } from '#/utils/css'
 import {
   AuthForm,
   AuthFormLayout,
@@ -54,17 +55,30 @@ export function LoginView({ action, ...rest }: { action: string } & Flash) {
               />
             </AuthLabel>
 
-            <div css={{ display: 'flex', justifyContent: 'space-between' }}>
+            <div
+              css={css`
+                display: flex;
+                justify-content: space-between;
+              `}
+            >
               <label>
                 <input
                   type="checkbox"
                   name={'remember'}
-                  css={{ marginRight: 'var(--spacing-2)' }}
+                  css={css`
+                    margin-right: var(--spacing-2);
+                  `}
                 />
                 <span class={'label'}>Remember for 30 days</span>
               </label>
 
-              <a class="link-primary" css={{fontSize: "var(--text-2xs)"}} href={routes.auth.forgotPassword.index.href()}>
+              <a
+                class="link-primary"
+                css={css`
+                  font-size: var(--text-2xs);
+                `}
+                href={routes.auth.forgotPassword.index.href()}
+              >
                 Forgot Password
               </a>
             </div>
@@ -76,20 +90,24 @@ export function LoginView({ action, ...rest }: { action: string } & Flash) {
             <Button
               type={'submit'}
               variant={'secondary'}
-              css={{
-                display: 'flex',
-                gap: 'var(--spacing-4)',
-                justifyContent: 'center',
-                alignItems: 'center',
-                width: '100%',
-              }}
+              css={css`
+                display: flex;
+                gap: var(--spacing-4);
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+              `}
             >
               <GoogleIcon />
               <span>Sign in with Google</span>
             </Button>
           </form>
 
-          <p css={{ textAlign: 'center' }}>
+          <p
+            css={css`
+              text-align: center;
+            `}
+          >
             Don't have an account?{' '}
             <a href={routes.auth.register.index.href()}>
               <strong class="link-primary">Sign up</strong>
