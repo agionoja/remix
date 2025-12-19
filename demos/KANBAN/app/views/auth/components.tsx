@@ -19,7 +19,7 @@ export function AuthLayout({ children }: { children: Remix.RemixNode }) {
         @media (min-width: 640px) {
           justify-content: space-between;
           align-items: center;
-          padding: var(--spacing-52);
+          padding-inline: var(--spacing-12);
         }
       `}
     >
