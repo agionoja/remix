@@ -1,59 +1,67 @@
 import type { Remix } from '@remix-run/dom'
+import { css } from '#/utils/css'
 
-type Variant = 'primary' | 'secondary' | 'tertiary'
+type Variant = 'primary' | 'secondary' | 'ghost'
 
 interface ButtonProps extends Remix.Props<'button'> {
   variant?: Variant
 }
 
 const buttonStyles = {
-  primary: {
-    padding: 'var(--space-3) var(--space-6)',
-    backgroundColor: 'var(--primary)',
-    color: 'var(--primary-foreground)',
-    border: 'none',
-    '&:hover': {
-      backgroundColor: 'color-mix(in srgb, var(--primary) 90%, black)',
-    },
-  },
-  secondary: {
-    padding: 'var(--space-3) var(--space-6)',
-    backgroundColor: 'var(--surface-card)',
-    color: 'var(--foreground)',
-    border: '1px solid var(--border)',
-    '&:hover': {
-      backgroundColor: 'var(--background-hover)',
-      borderColor: 'var(--border-strong)',
-    },
-  },
-  tertiary: {
-    padding: 'var(--space-3) var(--space-6)',
-    backgroundColor: 'var(--background-muted)',
-    color: 'var(--primary)',
-    border: '1px solid var(--border)',
-    '&:hover': {
-      backgroundColor: 'var(--background-hover)',
-      borderColor: 'var(--border-strong)',
-    },
-  },
+  primary: css`
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    &:hover:not(:disabled) {
+      background-color: var(--primary-hover);
+    }
+  `,
+  secondary: css`
+    background-color: var(--card);
+    color: var(--foreground);
+    border: 1px solid var(--border);
+    &:hover:not(:disabled) {
+      background-color: var(--accent);
+    }
+  `,
+  ghost: css`
+    background-color: transparent;
+    color: var(--foreground);
+    &:hover:not(:disabled) {
+      background-color: var(--accent);
+    }
+  `,
 }
 
-const baseStyles = {
-  borderRadius: 'var(--radius-button)',
-  fontSize: 'var(--font-size-base)',
-  fontWeight: 'var(--font-weight-medium)',
-  cursor: 'pointer',
-  transition: 'all var(--transition-base)',
-}
+const baseStyles = css`
+  padding: var(--spacing-3) var(--spacing-6);
+  border-radius: var(--rounded);
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+  &:disabled {
+    opacity: 0.5;
+    cursor: 'not-allowed';
+  }
+  &:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+`
 
-export function Button({ variant = 'primary', css, ...rest }: ButtonProps) {
+export function Button({ variant = 'primary', css: additionalCss, ...rest }: ButtonProps) {
   return (
     <button
       {...rest}
       css={{
         ...baseStyles,
         ...buttonStyles[variant],
-        ...css,
+        ...additionalCss,
       }}
     />
   )

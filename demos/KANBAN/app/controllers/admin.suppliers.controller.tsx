@@ -12,19 +12,19 @@ export default {
   },
 
   index(ctx) {
-    return render(<SuppliersIndexView />)
+    return render(<SuppliersIndexView url={ctx.url} />)
   },
 
   new(ctx) {
-    return render(<SuppliersNewView />)
+    return render(<SuppliersNewView url={ctx.url} />)
   },
 
   show(ctx) {
-    return render(<SuppliersShowView />)
+    return render(<SuppliersShowView url={ctx.url} />)
   },
 
   edit(ctx) {
-    return render(<SuppliersEditView />)
+    return render(<SuppliersEditView url={ctx.url} />)
   },
 
   create(ctx) {

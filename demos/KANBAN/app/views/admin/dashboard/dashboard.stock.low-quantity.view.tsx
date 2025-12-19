@@ -8,9 +8,9 @@ const meta = createMeta([
   },
 ])
 
-export function DashboardStockLowQuantityView() {
+export function DashboardStockLowQuantityView({ url }: { url: URL }) {
   return (
-    <Layout title="Low Quantity Stock" meta={meta}>
+    <Layout url={url} title="Low Quantity Stock" meta={meta}>
       Dashboard Stock Low Quantity View
     </Layout>
   )

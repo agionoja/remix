@@ -1,36 +1,38 @@
 import { Alert } from '#/assets/alert'
+import { Card } from '#/components/card'
 import { LogoIcon } from '#/components/icons'
+import { Label } from '#/components/input'
 import type { Flash } from '#/schema/flash'
+import { css } from '#/utils/css'
 import type { Remix } from '@remix-run/dom'
 import type { RequestMethod } from '@remix-run/fetch-router'
 
 export function AuthLayout({ children }: { children: Remix.RemixNode }) {
   return (
     <main
-      css={{
-        display: 'flex',
-        height: '100vh',
-        gap: 'var(--space-16)',
-        justifyContent: 'center',
-        '@media (min-width: 1024px)': {
-          padding: 'var(--space-52)',
-        },
-        '@media (min-width: 768px)': {
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          padding: 'var(--space-52)',
-        },
-      }}
+      css={css`
+        display: flex;
+        font-size: var(--text-sm);
+        min-height: 100svh;
+        gap: var(--spacing-16);
+        padding: var(--spacing-4);
+        background-color: var(--muted);
+        @media (max-width: 768px) {
+          justify-content: space-between;
+          align-items: center;
+          padding: var(--spacing-12);
+        }
+      `}
     >
       <LogoIcon
         height={300}
         width={300}
-        css={{
-          display: 'none',
-          '@media (min-width: 768px)': {
-            display: 'block',
-          },
-        }}
+        css={css`
+          display: none;
+          @media (min-width: 768px) {
+            display: block;
+          }
+        `}
       />
       {children}
     </main>
@@ -40,34 +42,29 @@ export function AuthLayout({ children }: { children: Remix.RemixNode }) {
 export function AuthHeader({ title, message }: { title: string; message: string }) {
   return (
     <header
-      css={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 'var(--space-4)',
-        alignItems: 'center',
-      }}
+      css={css`
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-4);
+        align-items: center;
+        text-align: center;
+      `}
     >
       <LogoIcon />
       <div
-        css={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 'var(--space-1)',
-          alignItems: 'center',
-          '@media (min-width: 640px)': {
-            gap: 'var(--space-2)',
-          },
-        }}
+        css={css`
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-2);
+          align-items: center;
+        `}
       >
         <h1>{title}</h1>
         <p
-          class={'text-body'}
-          css={{
-            fontSize: 'var(--font-size-sm)',
-            '@media (min-width: 640px)': {
-              fontSize: 'var(--font-size-base)',
-            },
-          }}
+          css={css`
+            font-size: var(--text-sm);
+            color: var(--muted-foreground);
+          `}
         >
           {message}
         </p>
@@ -77,45 +74,45 @@ export function AuthHeader({ title, message }: { title: string; message: string 
 }
 
 export function AuthFormLayout({
-  css,
+  css: additionalCss,
   children,
   message,
   type,
   ...rest
 }: Flash & Remix.Props<'div'>) {
   return (
-    <div
+    <Card
       {...rest}
-      class={'card'}
       css={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 'var(--space-5)',
-        width: '48rem',
-        maxWidth: '100%',
-        ...css,
+        ...css`
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-6);
+          width: 100%;
+          max-width: 48rem;
+          padding: var(--spacing-6);
+        `,
+        ...additionalCss,
       }}
     >
-      {message && (
-        <Alert variant={type} css={{ marginBottom: 'var(--space-4)' }}>
-          {message}
-        </Alert>
-      )}
+      {message && <Alert variant={type}>{message}</Alert>}
 
       {children}
-    </div>
+    </Card>
   )
 }
 
-export function AuthLabel({ css, ...rest }: Remix.Props<'label'>) {
+export function AuthLabel({ css: additionalCss, ...rest }: Remix.Props<'label'>) {
   return (
-    <label
+    <Label
       {...rest}
       css={{
-        ...css,
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 'var(--space-2)',
+        ...css`
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-2);
+        `,
+        ...additionalCss,
       }}
     />
   )
@@ -132,11 +129,11 @@ export function AuthForm({
   return (
     <form
       {...rest}
-      css={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 'var(--space-5)',
-      }}
+      css={css`
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-4);
+      `}
     >
       {children}
     </form>

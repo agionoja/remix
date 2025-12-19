@@ -56,14 +56,15 @@ export function LoginView({ action, ...rest }: { action: string } & Flash) {
 
             <div css={{ display: 'flex', justifyContent: 'space-between' }}>
               <label>
-                <input type="checkbox" name={'remember'} css={{ marginRight: 'var(--space-2)' }} />
+                <input
+                  type="checkbox"
+                  name={'remember'}
+                  css={{ marginRight: 'var(--spacing-2)' }}
+                />
                 <span class={'label'}>Remember for 30 days</span>
               </label>
 
-              <a
-                css={{ color: 'var(--color-primary)' }}
-                href={routes.auth.forgotPassword.index.href()}
-              >
+              <a class="link-primary" css={{fontSize: "var(--text-2xs)"}} href={routes.auth.forgotPassword.index.href()}>
                 Forgot Password
               </a>
             </div>
@@ -77,13 +78,13 @@ export function LoginView({ action, ...rest }: { action: string } & Flash) {
               variant={'secondary'}
               css={{
                 display: 'flex',
-                gap: 'var(--space-4)',
+                gap: 'var(--spacing-4)',
                 justifyContent: 'center',
                 alignItems: 'center',
                 width: '100%',
               }}
             >
-             <GoogleIcon/>
+              <GoogleIcon />
               <span>Sign in with Google</span>
             </Button>
           </form>
@@ -91,7 +92,7 @@ export function LoginView({ action, ...rest }: { action: string } & Flash) {
           <p css={{ textAlign: 'center' }}>
             Don't have an account?{' '}
             <a href={routes.auth.register.index.href()}>
-              <strong css={{ color: 'var(--primary)' }}>Sign up</strong>
+              <strong class="link-primary">Sign up</strong>
             </a>
           </p>
         </AuthFormLayout>

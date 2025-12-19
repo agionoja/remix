@@ -58,7 +58,7 @@ export function ResetPasswordView({ action, ...rest }: { action: string } & Flas
           <p css={{ textAlign: 'center' }}>
             Go back to{' '}
             <a href={routes.auth.login.index.href()}>
-              <strong css={{ color: 'var(--color-primary)' }}>Log in</strong>
+              <strong class="link-primary">Log in</strong>
             </a>
           </p>
         </AuthFormLayout>

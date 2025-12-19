@@ -8,9 +8,9 @@ const meta = createMeta([
   },
 ])
 
-export function DashboardSummaryView() {
+export function DashboardSummaryView({ url }: { url: URL }) {
   return (
-    <Layout title="Dashboard Summary" meta={meta}>
+    <Layout url={url} title="Dashboard Summary" meta={meta}>
       Dashboard Summary View
     </Layout>
   )

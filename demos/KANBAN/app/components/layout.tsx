@@ -1,6 +1,7 @@
 import { Sidebar } from '#/assets/sidebar'
 import { routes } from '#/🔄'
 import type { Remix } from '@remix-run/dom'
+import * as url from 'node:url'
 
 interface Props {
   children: Remix.RemixNode
@@ -64,11 +65,11 @@ export function Document({ meta, links, children, title }: Props) {
   )
 }
 
-export function Layout({ children, ...rest }: Props) {
+export function Layout({ children,url, ...rest }: Props&{url:URL}) {
   return (
     <Document {...rest}>
       <div css={{ display: 'flex' }}>
-        <Sidebar css={{ width: '20%' }} />
+        <Sidebar url={url}/>
         {children}
       </div>
     </Document>

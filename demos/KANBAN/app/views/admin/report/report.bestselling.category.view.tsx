@@ -8,9 +8,9 @@ const meta = createMeta([
   },
 ])
 
-export function ReportBestsellingCategoryView() {
+export function ReportBestsellingCategoryView({ url }: { url: URL }) {
   return (
-    <Layout title="Best Selling Categories" meta={meta}>
+    <Layout url={url} title="Best Selling Categories" meta={meta}>
       Report Bestselling Category View
     </Layout>
   )

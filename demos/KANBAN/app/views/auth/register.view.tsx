@@ -63,7 +63,7 @@ export function RegisterView(props: Flash) {
             </AuthLabel>
 
             <label>
-              <input type="checkbox" name={'remember'} css={{ marginRight: 'var(--space-2)' }} />
+              <input type="checkbox" name={'remember'} css={{ marginRight: 'var(--spacing-2)' }} />
               <span class={'label'}>Remember for 30 days</span>
             </label>
 
@@ -76,7 +76,7 @@ export function RegisterView(props: Flash) {
               variant={'secondary'}
               css={{
                 display: 'flex',
-                gap: 'var(--space-4)',
+                gap: 'var(--spacing-4)',
                 justifyContent: 'center',
                 alignItems: 'center',
                 width: '100%',
@@ -90,7 +90,7 @@ export function RegisterView(props: Flash) {
           <p css={{ textAlign: 'center' }}>
             Already have an account?{' '}
             <a href={routes.auth.login.index.href()}>
-              <strong css={{ color: 'var(--primary)' }}>Log in</strong>
+              <strong class="link-primary">Log in</strong>
             </a>
           </p>
         </AuthFormLayout>
