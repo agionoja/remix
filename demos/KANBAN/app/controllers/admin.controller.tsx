@@ -13,7 +13,7 @@ export default {
   middleware: [],
   actions: {
     search(ctx) {
-      return render(<AdminSearchView />)
+      return render(<AdminSearchView url={ctx.url} />)
     },
     dashboard: adminDashboardController,
     inventory: adminInventoryController,

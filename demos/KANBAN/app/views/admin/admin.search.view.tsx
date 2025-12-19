@@ -8,9 +8,9 @@ const meta = createMeta([
   },
 ])
 
-export function AdminSearchView() {
+export function AdminSearchView({ url }: { url: URL }) {
   return (
-    <Layout title="Search" meta={meta}>
+    <Layout url={url} title="Search" meta={meta}>
       Admin Search
     </Layout>
   )

@@ -5,7 +5,9 @@ export const routes = route({
   uploads: get('/uploads/*key'),
   playground: get('/playground'),
 
-  account: route('/account', {}),
+  account: route('/account', {
+    settings: "settings"
+  }),
 
   auth: {
     login: form('/login'),

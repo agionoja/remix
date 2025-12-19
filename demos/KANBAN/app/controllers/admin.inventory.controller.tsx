@@ -12,20 +12,20 @@ import type { Controller } from '@remix-run/fetch-router'
 
 export default {
   index(ctx) {
-    return render(<InventoryIndexView />)
+    return render(<InventoryIndexView url={ctx.url} />)
   },
 
   summary(ctx) {
-    return render(<InventorySummaryView />)
+    return render(<InventorySummaryView url={ctx.url} />)
   },
 
   products: {
     index(ctx) {
-      return render(<InventoryProductsIndexView />)
+      return render(<InventoryProductsIndexView url={ctx.url} />)
     },
 
     new(ctx) {
-      return render(<InventoryProductsNewView />)
+      return render(<InventoryProductsNewView url={ctx.url} />)
     },
 
     create(ctx) {
@@ -33,7 +33,7 @@ export default {
     },
 
     edit(ctx) {
-      return render(<InventoryProductsEditView />)
+      return render(<InventoryProductsEditView url={ctx.url} />)
     },
 
     update(ctx) {
@@ -50,15 +50,15 @@ export default {
 
     show: {
       overview(ctx) {
-        return render(<InventoryProductsShowOverviewView />)
+        return render(<InventoryProductsShowOverviewView url={ctx.url} />)
       },
 
       adjustments(ctx) {
-        return render(<InventoryProductsShowAdjustmentsView />)
+        return render(<InventoryProductsShowAdjustmentsView url={ctx.url} />)
       },
 
       history(ctx) {
-        return render(<InventoryProductsShowHistoryView />)
+        return render(<InventoryProductsShowHistoryView url={ctx.url} />)
       },
 
       download(ctx) {

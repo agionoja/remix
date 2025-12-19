@@ -8,9 +8,9 @@ const meta = createMeta([
   },
 ])
 
-export function OrdersItemsShowView() {
+export function OrdersItemsShowView({ url }: { url: URL }) {
   return (
-    <Layout title="Order Item Details" meta={meta}>
+    <Layout url={url} title="Order Item Details" meta={meta}>
       Orders Items Show
     </Layout>
   )

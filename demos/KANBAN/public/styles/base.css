@@ -19,13 +19,15 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: var(--font-family);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-normal);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-normal);
   color: var(--foreground);
-  background-color: var(--background-muted);
-  transition: background-color var(--transition-base), color var(--transition-base);
+  background-color: var(--background);
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
 }
 
 /* ============================================
@@ -40,11 +42,6 @@ ol {
 a {
   color: inherit;
   text-decoration: none;
-  transition: opacity var(--transition-fast);
-}
-
-a:hover {
-  opacity: 0.8;
 }
 
 button {
@@ -105,35 +102,26 @@ input[type='radio'] {
 input,
 textarea,
 select {
-  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: var(--border-focus);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring) 10%, transparent);
-}
-
-input.error,
-textarea.error,
-select.error {
-  border-color: var(--error);
-}
-
-input.error:focus,
-textarea.error:focus,
-select.error:focus {
-  border-color: var(--error);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--error) 10%, transparent);
+  border-color: var(--ring);
+  box-shadow:
+    0 0 0 2px var(--background),
+    0 0 0 4px var(--ring);
 }
 
 textarea {
   resize: vertical;
 }
 
-/*!* Autofill styles *!*/
+/* Autofill styles */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -143,9 +131,21 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 30px var(--background) inset !important;
+  -webkit-box-shadow: 0 0 0 100px var(--background) inset !important;
   -webkit-text-fill-color: var(--foreground) !important;
+  caret-color: var(--foreground) !important;
+  border-color: var(--input) !important;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow:
+    0 0 0 100px var(--background) inset,
+    0 0 0 2px var(--background),
+    0 0 0 4px var(--ring) !important;
+  border-color: var(--ring) !important;
 }
 
 /* ============================================
@@ -153,7 +153,7 @@ select:-webkit-autofill:focus {
    ============================================ */
 
 :focus-visible {
-  outline: 2px solid var(--border-focus);
+  outline: 2px solid var(--ring);
   outline-offset: 2px;
 }
 
@@ -162,79 +162,33 @@ select:-webkit-autofill:focus {
 }
 
 /* ============================================
-   TYPOGRAPHY - Fluid responsive headings
+   TYPOGRAPHY - Simple fluid scaling
    ============================================ */
 
-h1,
-.h1 {
-  font-size: clamp(2.7rem, 2rem + 2vw, 3.6rem);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-tight);
-  color: var(--foreground);
-  letter-spacing: var(--letter-spacing-tight);
+h1 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.6rem);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
 }
 
-h2,
-.h2 {
-  font-size: clamp(2.25rem, 1.75rem + 1.5vw, 3rem);
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-tight);
-  color: var(--foreground);
-  letter-spacing: var(--letter-spacing-tight);
+h2 {
+  font-size: clamp(2rem, 3vw + 1rem, 3rem);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
 }
 
-h3,
-.h3 {
-  font-size: clamp(1.8rem, 1.5rem + 1vw, 2.4rem);
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-normal);
-  color: var(--foreground);
+h3 {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-snug);
 }
 
-h4,
-.h4 {
-  font-size: clamp(1.6rem, 1.4rem + 0.5vw, 2rem);
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-normal);
-  color: var(--foreground);
-}
-
-h5,
-.h5 {
-  font-size: clamp(1.4rem, 1.3rem + 0.3vw, 1.8rem);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-normal);
-  color: var(--foreground-muted);
-}
-
-h6,
-.h6 {
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-normal);
-  color: var(--foreground-muted);
-}
-
-/* ============================================
-   TEXT UTILITIES
-   ============================================ */
-
-.text-muted {
-  color: var(--foreground-muted);
-}
-
-.text-subtle {
-  color: var(--foreground-subtle);
-}
-
-.text-body {
-  color: var(--foreground-muted);
-}
-
-.label {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--foreground-muted);
+h4 {
+  font-size: clamp(1.6rem, 1vw + 1rem, 2rem);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-snug);
 }
 
 /* ============================================
