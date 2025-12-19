@@ -15,12 +15,11 @@ export function AuthLayout({ children }: { children: Remix.RemixNode }) {
         font-size: var(--text-sm);
         min-height: 100svh;
         gap: var(--spacing-16);
-        padding: var(--spacing-4);
         background-color: var(--muted);
-        @media (max-width: 768px) {
+        @media (min-width: 640px) {
           justify-content: space-between;
           align-items: center;
-          padding: var(--spacing-12);
+          padding: var(--spacing-52);
         }
       `}
     >
@@ -62,8 +61,11 @@ export function AuthHeader({ title, message }: { title: string; message: string 
         <h1>{title}</h1>
         <p
           css={css`
-            font-size: var(--text-sm);
+            font-size: var(--text-xs);
             color: var(--muted-foreground);
+            @media (min-width: 640px) {
+              font-size: var(--text-sm);
+            }
           `}
         >
           {message}
@@ -90,7 +92,12 @@ export function AuthFormLayout({
           gap: var(--spacing-6);
           width: 100%;
           max-width: 48rem;
-          padding: var(--spacing-6);
+          padding: var(--spacing-5) var(--spacing-3);
+          border-radius: 0;
+          @media (min-width: 640px) {
+            border-radius: var(--rounded-lg);
+            padding: var(--spacing-8);
+          }
         `,
         ...additionalCss,
       }}

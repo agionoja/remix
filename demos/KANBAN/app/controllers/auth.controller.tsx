@@ -18,7 +18,7 @@ export default {
     index(ctx) {
       let authFlash = flash.assert(ctx.session.get('flash') || {})
       let action = routes.auth.login.action.href(undefined, {
-        redirectTo: ctx.url.searchParams.get('redirectTo'),
+        returnTo: ctx.url.searchParams.get('returnTo'),
       })
 
       return render(<LoginView {...authFlash} action={action} />)
@@ -64,8 +64,8 @@ export default {
     action(ctx) {
       ctx.session.flash('flash', {
         message: 'Password reset Successfully. Log in to continue.',
-        type: 'success',
-      })
+        type: 'warning',
+      } as typeof flash.infer)
       return createRedirectResponse(routes.auth.login.index.href())
     },
   },

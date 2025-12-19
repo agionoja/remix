@@ -30,11 +30,14 @@
     "@types/node": "catalog:",
     "@typescript/native-preview": "catalog:",
     "esbuild": "^0.25.10",
+    "sass": "^1.97.0",
     "tsx": "catalog:"
   },
   "scripts": {
     "dev": "tsx watch server.ts",
     "dev:browser": "esbuild app/assets/*.tsx --outbase=app/assets --outdir=public/assets --bundle --minify --splitting --format=esm --entry-names='[dir]/[name]' --chunk-names='chunks/[name]-[hash]' --sourcemap --watch",
+    "dev:css": "sass public/styles/main.scss public/styles/bundle.css --style=expanded --source-map --watch",
+    "build:css": "sass public/styles/main.scss public/styles/bundle.css --style=compressed --no-source-map",
     "start": "NODE_ENV=production tsx server.ts",
     "test": "NODE_ENV=test tsx --test",
     "typecheck": "tsgo --noEmit"

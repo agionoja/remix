@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8f8716a9-b3e6-48e3-9c59-622ff06378fa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/auth.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/components.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/components.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/login.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/login.view.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +173,7 @@
       <updated>1765990695621</updated>
       <workItem from="1765990696884" duration="35023000" />
       <workItem from="1766085084196" duration="19835000" />
-      <workItem from="1766137804618" duration="7021000" />
+      <workItem from="1766137804618" duration="12634000" />
     </task>
     <servers />
   </component>
