@@ -46,7 +46,7 @@ const baseStyles = css`
   gap: var(--spacing-2);
   &:disabled {
     opacity: 0.5;
-    cursor: 'not-allowed';
+    cursor: not-allowed;
   }
   &:focus-visible {
     outline: 2px solid var(--ring);

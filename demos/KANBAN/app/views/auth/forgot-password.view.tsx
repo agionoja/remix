@@ -3,6 +3,7 @@ import { Input } from '#/components/input'
 import { Document } from '#/components/layout'
 import type { Flash } from '#/schema/flash'
 import { createMeta } from '#/utils/meta'
+import { css } from '#/utils/css'
 import {
   AuthForm,
   AuthFormLayout,
@@ -36,7 +37,11 @@ export function ForgotPasswordView(props: Flash) {
 
             <Button type={'submit'}>Get Reset Link</Button>
           </AuthForm>
-          <p css={{ textAlign: 'center' }}>
+          <p
+            css={css`
+              text-align: center;
+            `}
+          >
             Go back to{' '}
             <a href={routes.auth.login.index.href()}>
               <strong class="link-primary">Log in</strong>
