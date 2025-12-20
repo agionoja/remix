@@ -121,7 +121,7 @@ textarea {
   resize: vertical;
 }
 
-/* Autofill styles */
+/* Autofill styles - cross-browser support */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -134,18 +134,28 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0 100px var(--background) inset !important;
   -webkit-text-fill-color: var(--foreground) !important;
   caret-color: var(--foreground) !important;
-  border-color: var(--input) !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill:focus {
-  -webkit-box-shadow:
-    0 0 0 100px var(--background) inset,
-    0 0 0 2px var(--background),
-    0 0 0 4px var(--ring) !important;
-  border-color: var(--ring) !important;
+/* Firefox autofill */
+input:-moz-autofill,
+input:-moz-autofill-preview,
+textarea:-moz-autofill,
+textarea:-moz-autofill-preview,
+select:-moz-autofill,
+select:-moz-autofill-preview {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+  caret-color: var(--foreground) !important;
+}
+
+/* For browsers that support autofill pseudo-class */
+input:autofill,
+textarea:autofill,
+select:autofill {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+  caret-color: var(--foreground) !important;
 }
 
 /* ============================================
