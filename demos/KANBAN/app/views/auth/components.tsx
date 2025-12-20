@@ -12,14 +12,18 @@ export function AuthLayout({ children }: { children: Remix.RemixNode }) {
     <main
       css={css`
         display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: var(--text-sm);
         min-height: 100svh;
-        gap: var(--spacing-16);
+        gap: var(--spacing-8);
+        padding: var(--spacing-4);
         background-color: var(--muted);
         @media (min-width: 640px) {
+          flex-direction: row;
           justify-content: space-between;
-          align-items: center;
           padding-inline: var(--spacing-24);
+          padding-block: var(--spacing-4);
         }
       `}
     >
@@ -92,10 +96,9 @@ export function AuthFormLayout({
           gap: var(--spacing-6);
           width: 100%;
           max-width: 48rem;
-          padding: var(--spacing-5) var(--spacing-4);
-          border-radius: 0;
+          padding: var(--spacing-4);
+          border-radius: var(--radius);
           @media (min-width: 640px) {
-            border-radius: var(--rounded-lg);
             padding: var(--spacing-8);
           }
         `,

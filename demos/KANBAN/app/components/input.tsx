@@ -13,8 +13,11 @@ export function Input({ error, css: additionalCss, ...rest }: InputProps) {
         ...css`
           display: flex;
           width: 100%;
-          padding: var(--spacing-3);
-          border-radius: var(--rounded);
+          padding: var(--spacing-2);
+          @media (min-width: 640px) {
+            padding: var(--spacing-3);
+          }
+          border-radius: calc(var(--radius) - 2px);
           border: 1px solid var(--input);
           font-size: var(--text-sm);
           background-color: var(--background);
@@ -67,8 +70,11 @@ export function Textarea({
           display: flex;
           width: 100%;
           min-height: 8rem;
-          padding: var(--spacing-3);
-          border-radius: var(--rounded);
+          padding: var(--spacing-2);
+          @media (min-width: 640px) {
+            padding: var(--spacing-3);
+          }
+          border-radius: calc(var(--radius) - 2px);
           border: 1px solid var(--input);
           font-size: var(--text-sm);
           background-color: var(--background);

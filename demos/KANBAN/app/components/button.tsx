@@ -11,9 +11,6 @@ const buttonStyles = {
   primary: css`
     background-color: var(--primary);
     color: var(--primary-foreground);
-    &:hover:not(:disabled) {
-      background-color: var(--primary-hover);
-    }
   `,
   secondary: css`
     background-color: var(--card);
@@ -33,8 +30,11 @@ const buttonStyles = {
 }
 
 const baseStyles = css`
-  padding: var(--spacing-3) var(--spacing-6);
-  border-radius: var(--rounded);
+  padding: var(--spacing-2) var(--spacing-4);
+  @media (min-width: 640px) {
+    padding: var(--spacing-3) var(--spacing-6);
+  }
+  border-radius: calc(var(--radius) - 2px);
   font-size: var(--text-base);
   font-weight: var(--font-medium);
   cursor: pointer;

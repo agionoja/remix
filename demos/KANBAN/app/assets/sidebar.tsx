@@ -19,7 +19,7 @@ const linkStyles = css`
   gap: var(--spacing-3);
   align-items: center;
   width: 100%;
-  border-radius: var(--rounded);
+  border-radius: var(--radius);
   transition:
     background-color var(--transition-fast),
     color var(--transition-fast);

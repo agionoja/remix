@@ -32,6 +32,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
   /* ============================================
       SPACING - Consistent spacing scale
       ============================================ */
@@ -61,12 +62,15 @@
   --spacing-44: 17.6rem; /* 176px */
   --spacing-48: 19.2rem; /* 192px */
   --spacing-52: 20.8rem; /* 208px */
+
   /* ============================================
       TYPOGRAPHY - Text styling primitives
       ============================================ */
+
   --font-sans:
     'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Primary typeface */
   --font-mono: 'Fira Code', 'Monaco', 'Courier New', monospace; /* Monospace for code */
+
   /* Font Sizes - Responsive scale */
   --text-2xs: 1rem; /* 10px - captions */
   --text-xs: 1.2rem; /* 12px - small labels */
@@ -75,23 +79,28 @@
   --text-lg: 1.8rem; /* 18px - large body */
   --text-xl: 2rem; /* 20px - headings */
   --text-2xl: 2.4rem; /* 24px - large headings */
+
   /* Font Weights - Semantic weight scale */
   --font-normal: 400; /* Regular text */
   --font-medium: 500; /* Emphasized text */
   --font-semibold: 600; /* Strong emphasis */
   --font-bold: 700; /* Heavy emphasis */
+
   /* Line Heights - Readability scale */
   --leading-tight: 1.25; /* Compact spacing */
   --leading-snug: 1.375; /* Slightly loose */
   --leading-normal: 1.5; /* Standard readability */
   --leading-relaxed: 1.625; /* Generous spacing */
+
   /* Letter Spacing - Text rhythm */
   --tracking-tight: -0.025em; /* Condensed */
   --tracking-normal: 0; /* Standard */
   --tracking-wide: 0.025em; /* Expanded */
+
   /* ============================================
       SHADOWS - Elevation and depth
       ============================================ */
+
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Subtle lift */
   --shadow:
     0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); /* Default elevation */
@@ -101,27 +110,35 @@
     0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* Floating panels */
   --shadow-xl:
     0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); /* Modals, tooltips */
+
   /* ============================================
       TRANSITIONS - Animation timing
       ============================================ */
+
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1); /* Quick interactions */
   --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1); /* Standard transitions */
+
   /* ============================================
       LAYOUT - Component dimensions
       ============================================ */
+
   --sidebar-width: 240px; /* Sidebar width */
   --header-height: 64px; /* Header height */
+
   /* ============================================
       Z-INDEX - Layer stacking
       ============================================ */
+
   --z-dropdown: 1000; /* Dropdown menus */
   --z-sticky: 1020; /* Sticky elements */
   --z-modal: 1050; /* Modal dialogs */
   --z-popover: 1060; /* Popovers, tooltips */
   --z-tooltip: 1070; /* Tooltips */
+
   /* ============================================
       BREAKPOINTS - Responsive design
       ============================================ */
+
   --screen-sm: 640px; /* Small devices */
   --screen-md: 768px; /* Medium devices */
   --screen-lg: 1024px; /* Large devices */
@@ -129,7 +146,7 @@
   --screen-2xl: 1536px; /* 2X large */
 }
 
-:root[data-theme=dark] {
+:root[data-theme='dark'] {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.145 0 0);
@@ -163,324 +180,3 @@
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
 }
-
-/* ============================================
-   RESET & BASE STYLES
-   ============================================ */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 10px; /* Base: 1rem = 10px */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-size-adjust: 100%;
-}
-
-body {
-  min-height: 100vh;
-  font-family: var(--font-sans);
-  font-size: var(--text-base);
-  font-weight: var(--font-normal);
-  line-height: var(--leading-normal);
-  color: var(--foreground);
-  background-color: var(--background);
-  transition: background-color var(--transition-base), color var(--transition-base);
-}
-
-/* ============================================
-   ELEMENTS
-   ============================================ */
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  font: inherit;
-  color: inherit;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-input,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
-fieldset {
-  border: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* ============================================
-   FORM ELEMENTS
-   ============================================ */
-input[type=checkbox],
-input[type=radio] {
-  width: 1.6rem;
-  height: 1.6rem;
-  cursor: pointer;
-  accent-color: var(--primary);
-}
-
-input,
-textarea,
-select {
-  transition: border-color var(--transition-base), box-shadow var(--transition-base);
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-  border-color: var(--ring);
-  box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--ring);
-}
-
-textarea {
-  resize: vertical;
-}
-
-/* Autofill styles - cross-browser support */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 100px var(--background) inset !important;
-  -webkit-text-fill-color: var(--foreground) !important;
-  caret-color: var(--foreground) !important;
-  transition: background-color 5000s ease-in-out 0s;
-}
-
-/* Firefox autofill */
-input:-moz-autofill,
-input:-moz-autofill-preview,
-textarea:-moz-autofill,
-textarea:-moz-autofill-preview,
-select:-moz-autofill,
-select:-moz-autofill-preview {
-  background-color: var(--background) !important;
-  color: var(--foreground) !important;
-  caret-color: var(--foreground) !important;
-}
-
-/* For browsers that support autofill pseudo-class */
-input:autofill,
-textarea:autofill,
-select:autofill {
-  background-color: var(--background) !important;
-  color: var(--foreground) !important;
-  caret-color: var(--foreground) !important;
-}
-
-/* ============================================
-   FOCUS STYLES
-   ============================================ */
-:focus-visible {
-  outline: 2px solid var(--ring);
-  outline-offset: 2px;
-}
-
-:focus:not(:focus-visible) {
-  outline: none;
-}
-
-/* ============================================
-   TYPOGRAPHY - Simple fluid scaling
-   ============================================ */
-h1 {
-  font-size: clamp(2.4rem, 4vw + 1rem, 3.6rem);
-  font-weight: var(--font-bold);
-  line-height: var(--leading-tight);
-  letter-spacing: var(--tracking-tight);
-}
-
-h2 {
-  font-size: clamp(2rem, 3vw + 1rem, 3rem);
-  font-weight: var(--font-semibold);
-  line-height: var(--leading-tight);
-  letter-spacing: var(--tracking-tight);
-}
-
-h3 {
-  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
-  font-weight: var(--font-semibold);
-  line-height: var(--leading-snug);
-}
-
-h4 {
-  font-size: clamp(1.6rem, 1vw + 1rem, 2rem);
-  font-weight: var(--font-semibold);
-  line-height: var(--leading-snug);
-}
-
-/* ============================================
-   ACCESSIBILITY - Reduced motion
-   ============================================ */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-.container {
-  width: 100%;
-  max-width: 1536px;
-  margin-inline: auto;
-  padding-inline: var(--spacing-6);
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  padding: var(--spacing-1) var(--spacing-3);
-  border-radius: calc(var(--radius) - 2px);
-  font-size: var(--text-xs);
-  font-weight: var(--font-medium);
-  line-height: 1;
-  border: 1px solid transparent;
-}
-
-.badge-default {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
-}
-
-.badge-secondary {
-  background-color: var(--muted);
-  color: var(--foreground);
-}
-
-.badge-success {
-  background-color: var(--success);
-  color: var(--success-foreground);
-}
-
-.badge-destructive {
-  background-color: var(--destructive);
-  color: var(--destructive-foreground);
-}
-
-.badge-outline {
-  color: var(--foreground);
-  border-color: var(--border);
-}
-
-.link-primary {
-  color: var(--primary);
-  text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-.link-primary:hover {
-  color: oklch(from var(--primary) calc(l + 0.1) c h);
-}
-
-.link-secondary {
-  color: var(--foreground);
-  text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-.link-secondary:hover {
-  color: var(--accent-foreground);
-}
-
-.link-muted {
-  color: var(--muted-foreground);
-  text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-.link-muted:hover {
-  color: var(--foreground);
-}
-
-/* ============================================
-    TEXT UTILITIES
-    ============================================ */
-.text-muted {
-  color: var(--muted-foreground);
-}
-
-/* ============================================
-    TEXT UTILITIES
-    ============================================ */
-.text-sm {
-  font-size: var(--text-sm);
-}
-
-.text-xs {
-  font-size: var(--text-xs);
-}
-
-.font-medium {
-  font-weight: var(--font-medium);
-}
-
-.font-semibold {
-  font-weight: var(--font-semibold);
-}
-
-/* ============================================
-   ACCESSIBILITY
-   ============================================ */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-/*# sourceMappingURL=bundle.css.map */

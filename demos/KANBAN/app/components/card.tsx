@@ -9,7 +9,7 @@ export function Card({ css: additionalCss, ...rest }: Remix.Props<'div'>) {
         ...css`
           background-color: var(--card);
           color: var(--card-foreground);
-          border-radius: var(--rounded-lg);
+          border-radius: var(--radius);
           border: 1px solid var(--border);
           box-shadow: var(--shadow-sm);
         `,
@@ -28,7 +28,10 @@ export function CardHeader({ css: additionalCss, ...rest }: Remix.Props<'div'>) 
           display: flex;
           flex-direction: column;
           gap: var(--spacing-2);
-          padding: var(--spacing-6);
+          padding: var(--spacing-4);
+          @media (min-width: 640px) {
+            padding: var(--spacing-6);
+          }
         `,
         ...additionalCss,
       }}
@@ -73,8 +76,11 @@ export function CardContent({ css: additionalCss, ...rest }: Remix.Props<'div'>)
       {...rest}
       css={{
         ...css`
-          padding: var(--spacing-6);
+          padding: var(--spacing-4);
           padding-top: 0;
+          @media (min-width: 640px) {
+            padding: var(--spacing-6);
+          }
         `,
         ...additionalCss,
       }}
@@ -90,8 +96,11 @@ export function CardFooter({ css: additionalCss, ...rest }: Remix.Props<'div'>) 
         ...css`
           display: flex;
           align-items: center;
-          padding: var(--spacing-6);
+          padding: var(--spacing-4);
           padding-top: 0;
+          @media (min-width: 640px) {
+            padding: var(--spacing-6);
+          }
         `,
         ...additionalCss,
       }}

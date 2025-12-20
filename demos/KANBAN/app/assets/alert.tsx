@@ -2,7 +2,7 @@ import type { Flash } from '#/schema/flash'
 import { css } from '#/utils/css'
 import type { Remix } from '@remix-run/dom'
 
-type Variant = 'default' | Flash['type']
+type Variant = 'default' | 'destructive' | 'success' | 'warning'
 
 interface AlertProps extends Remix.Props<'div'> {
   variant?: Variant
@@ -14,26 +14,26 @@ const alertStyles = {
     color: var(--foreground);
     border-color: var(--border);
   `,
-  success: css`
-    background-color: var(--success-background);
-    color: var(--success);
-    border-color: var(--success);
-  `,
   destructive: css`
-    background-color: var(--destructive-background);
+    background-color: var(--muted);
+    color: var(--destructive);
+    border-color: var(--destructive);
+  `,
+  success: css`
+    background-color: var(--muted);
     color: var(--destructive);
     border-color: var(--destructive);
   `,
   warning: css`
-    background-color: var(--warning-background);
-    color: var(--warning);
-    border-color: var(--warning);
+    background-color: var(--muted);
+    color: var(--destructive);
+    border-color: var(--destructive);
   `,
 }
 
 const baseStyles = css`
   padding: var(--spacing-4);
-  border-radius: var(--rounded);
+  border-radius: calc(var(--radius) - 2px);
   border: 1px solid;
   font-size: var(--text-sm);
   display: flex;
