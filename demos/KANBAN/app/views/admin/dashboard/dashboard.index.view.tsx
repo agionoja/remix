@@ -1,4 +1,4 @@
-import { Layout } from '#/components/layout'
+import { Layout } from '#/assets/layout'
 import { createMeta } from '#/utils/meta'
 
 const meta = createMeta([
@@ -8,9 +8,9 @@ const meta = createMeta([
   },
 ])
 
-export function DashboardIndexView({url}:{url:URL}) {
-  return (
-    <Layout url={url} title="Dashboard" meta={meta}>
+export function DashboardIndexView({ pathname }: { pathname: string }) {
+  return () => (
+    <Layout pathname={pathname} title="Dashboard" meta={meta}>
       Admin Dashboard View
     </Layout>
   )

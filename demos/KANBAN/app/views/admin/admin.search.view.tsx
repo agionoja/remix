@@ -1,4 +1,4 @@
-import { Layout } from '#/components/layout'
+import { Layout } from '#/assets/layout'
 import { createMeta } from '#/utils/meta'
 
 const meta = createMeta([
@@ -8,9 +8,9 @@ const meta = createMeta([
   },
 ])
 
-export function AdminSearchView({ url }: { url: URL }) {
+export function AdminSearchView({ pathname }: { pathname: string }) {
   return (
-    <Layout url={url} title="Search" meta={meta}>
+    <Layout pathname={pathname} title="Search" meta={meta}>
       Admin Search
     </Layout>
   )

@@ -1,7 +1,7 @@
 import { Button } from '#/components/button'
 import { GoogleIcon } from '#/components/icons'
 import { Input } from '#/components/input'
-import { Document } from '#/components/layout'
+import { Document } from '#/assets/layout'
 import type { Flash } from '#/schema/flash'
 import { createMeta } from '#/utils/meta'
 import { css } from '#/utils/css'
