@@ -8,20 +8,20 @@ import type { Controller } from '@remix-run/fetch-router'
 
 export default {
   index(ctx) {
-    return render(<ReportIndexView url={ctx.url} />)
+    return render(<ReportIndexView pathname={ctx.url.pathname} />)
   },
 
   profitAndRevenue(ctx) {
-    return render(<ReportProfitRevenue url={ctx.url} />)
+    return render(<ReportProfitRevenue pathname={ctx.url.pathname} />)
   },
 
   bestselling: {
     category(ctx) {
-      return render(<ReportBestsellingCategoryView url={ctx.url} />)
+      return render(<ReportBestsellingCategoryView pathname={ctx.url.pathname} />)
     },
 
     product(ctx) {
-      return render(<ReportBestsellingProductView url={ctx.url} />)
+      return render(<ReportBestsellingProductView pathname={ctx.url.pathname} />)
     },
   },
 } satisfies Controller<typeof routes.admin.report>

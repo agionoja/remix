@@ -121,6 +121,7 @@ export function AuthLabel({ css: additionalCss, ...rest }: Remix.Props<'label'>)
           display: flex;
           flex-direction: column;
           gap: var(--spacing-2);
+          margin-bottom: var(--spacing-2);
         `,
         ...additionalCss,
       }}

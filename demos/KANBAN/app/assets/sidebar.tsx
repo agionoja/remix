@@ -11,7 +11,13 @@ import {
 } from '#/components/icons'
 import { css } from '#/utils/css'
 import { routes } from '#/🔄'
-import type { Remix } from '@remix-run/dom'
+import { hydrated, type Remix } from '@remix-run/dom'
+
+type SidebarContext = {
+  isOpen: boolean
+  isMobile: boolean
+  toggle: () => void
+}
 
 const linkStyles = css`
   display: flex;
@@ -37,8 +43,12 @@ const linkStyles = css`
   }
 `
 
-export function Sidebar({ css: _css = {}, url, ...rest }: Remix.Props<'aside'> & { url: URL }) {
-  const isActive = (href: string) => url.pathname === href
+export function Sidebar({
+  css: _css = {},
+  pathname,
+  ...rest
+}: Remix.Props<'aside'> & { pathname: string }) {
+  const isActive = (href: string) => pathname === href
 
   return (
     <aside

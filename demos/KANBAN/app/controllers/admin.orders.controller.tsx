@@ -10,11 +10,11 @@ import type { Controller } from '@remix-run/fetch-router'
 
 export default {
   summary(ctx) {
-    return render(<OrdersSummaryView url={ctx.url} />)
+    return render(<OrdersSummaryView pathname={ctx.url.pathname} />)
   },
 
   index(ctx) {
-    return render(<OrdersIndexView url={ctx.url} />)
+    return render(<OrdersIndexView pathname={ctx.url.pathname} />)
   },
 
   items: {
@@ -23,19 +23,19 @@ export default {
     },
 
     index(ctx) {
-      return render(<OrdersItemsIndexView url={ctx.url} />)
+      return render(<OrdersItemsIndexView pathname={ctx.url.pathname} />)
     },
 
     new(ctx) {
-      return render(<OrdersItemsNewView url={ctx.url} />)
+      return render(<OrdersItemsNewView pathname={ctx.url.pathname} />)
     },
 
     show(ctx) {
-      return render(<OrdersItemsShowView url={ctx.url} />)
+      return render(<OrdersItemsShowView pathname={ctx.url.pathname} />)
     },
 
     edit(ctx) {
-      return render(<OrdersItemsEditView url={ctx.url} />)
+      return render(<OrdersItemsEditView pathname={ctx.url.pathname} />)
     },
 
     create(ctx) {

@@ -1,4 +1,4 @@
-import { Layout } from '#/components/layout'
+import { Layout } from '#/assets/layout'
 import { createMeta } from '#/utils/meta'
 
 const meta = createMeta([
@@ -8,9 +8,9 @@ const meta = createMeta([
   },
 ])
 
-export function ReportIndexView({ url }: { url: URL }) {
+export function ReportIndexView({ pathname }: { pathname: string }) {
   return (
-    <Layout url={url} title="Reports" meta={meta}>
+    <Layout pathname={pathname} title="Reports" meta={meta}>
       Report Index View
     </Layout>
   )

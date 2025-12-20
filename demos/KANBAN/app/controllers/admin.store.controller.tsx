@@ -8,19 +8,19 @@ import type { Controller } from '@remix-run/fetch-router'
 
 export default {
   index(ctx) {
-    return render(<StoreIndexView url={ctx.url} />)
+    return render(<StoreIndexView pathname={ctx.url.pathname} />)
   },
 
   new(ctx) {
-    return render(<StoreNewView url={ctx.url} />)
+    return render(<StoreNewView pathname={ctx.url.pathname} />)
   },
 
   show(ctx) {
-    return render(<StoreShowView url={ctx.url} />)
+    return render(<StoreShowView pathname={ctx.url.pathname} />)
   },
 
   edit(ctx) {
-    return render(<StoreEditView url={ctx.url} />)
+    return render(<StoreEditView pathname={ctx.url.pathname} />)
   },
 
   create(ctx) {

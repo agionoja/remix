@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../node_modules/.pnpm/@remix-run+dom@0.0.0-experimental-remix-jam.6/node_modules/@remix-run/dom/src/jsx-runtime.ts"],
-  "sourcesContent": [null],
-  "mappings": "wCAeM,SAAUA,EAAIC,EAAWC,EAAYC,EAAS,CAClD,OAAOC,EAAWH,EAAMC,EAAOC,CAAG,CACpC,CAQM,SAAUE,EAAKJ,EAAWC,EAAYC,EAAS,CACnD,OAAOC,EAAWH,EAAMC,EAAOC,CAAG,CACpC,CAYA,SAASG,EAAWC,EAAWC,EAAYC,EAAQ,CACjD,OAAIA,IAAQ,SACVD,EAAQ,CAAE,GAAGA,EAAO,IAAAC,CAAG,GAElBC,EAAcH,EAAMC,CAAK,CAClC",
-  "names": ["jsx", "type", "props", "key", "jsxAdapter", "jsxs", "jsxAdapter", "type", "props", "key", "createElement"]
-}

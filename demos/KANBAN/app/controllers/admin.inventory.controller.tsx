@@ -12,20 +12,20 @@ import type { Controller } from '@remix-run/fetch-router'
 
 export default {
   index(ctx) {
-    return render(<InventoryIndexView url={ctx.url} />)
+    return render(<InventoryIndexView pathname={ctx.url.pathname} />)
   },
 
   summary(ctx) {
-    return render(<InventorySummaryView url={ctx.url} />)
+    return render(<InventorySummaryView pathname={ctx.url.pathname} />)
   },
 
   products: {
     index(ctx) {
-      return render(<InventoryProductsIndexView url={ctx.url} />)
+      return render(<InventoryProductsIndexView pathname={ctx.url.pathname} />)
     },
 
     new(ctx) {
-      return render(<InventoryProductsNewView url={ctx.url} />)
+      return render(<InventoryProductsNewView pathname={ctx.url.pathname} />)
     },
 
     create(ctx) {
@@ -33,7 +33,7 @@ export default {
     },
 
     edit(ctx) {
-      return render(<InventoryProductsEditView url={ctx.url} />)
+      return render(<InventoryProductsEditView pathname={ctx.url.pathname} />)
     },
 
     update(ctx) {
@@ -50,15 +50,15 @@ export default {
 
     show: {
       overview(ctx) {
-        return render(<InventoryProductsShowOverviewView url={ctx.url} />)
+        return render(<InventoryProductsShowOverviewView pathname={ctx.url.pathname} />)
       },
 
       adjustments(ctx) {
-        return render(<InventoryProductsShowAdjustmentsView url={ctx.url} />)
+        return render(<InventoryProductsShowAdjustmentsView pathname={ctx.url.pathname} />)
       },
 
       history(ctx) {
-        return render(<InventoryProductsShowHistoryView url={ctx.url} />)
+        return render(<InventoryProductsShowHistoryView pathname={ctx.url.pathname} />)
       },
 
       download(ctx) {

@@ -138,16 +138,16 @@ select:-webkit-autofill:focus {
 }
 
 /* Firefox autofill */
-input:-moz-autofill,
-input:-moz-autofill-preview,
-textarea:-moz-autofill,
-textarea:-moz-autofill-preview,
-select:-moz-autofill,
-select:-moz-autofill-preview {
-  background-color: var(--background) !important;
-  color: var(--foreground) !important;
-  caret-color: var(--foreground) !important;
-}
+//input:-moz-autofill,
+//input:-moz-autofill-preview,
+//textarea:-moz-autofill,
+//textarea:-moz-autofill-preview,
+//select:-moz-autofill,
+//select:-moz-autofill-preview {
+//  background-color: var(--background) !important;
+//  color: var(--foreground) !important;
+//  caret-color: var(--foreground) !important;
+//}
 
 /* For browsers that support autofill pseudo-class */
 input:autofill,

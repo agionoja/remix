@@ -1,9 +1,11 @@
-import { Sidebar } from '#/assets/sidebar'
 import { routes } from '#/🔄'
-import type { Remix } from '@remix-run/dom'
+import { Sidebar as Sidebar } from '#/assets/sidebar'
+import { Search } from '#/components/search'
+import { css } from '#/utils/css'
+import { type Remix } from '@remix-run/dom'
 
-interface Props {
-  children: Remix.RemixNode
+type Props = {
+  children?: Remix.RemixNode
   title?: string
   meta?: Remix.Props<'meta'>[]
   links?: Remix.Props<'link'>[]
@@ -64,12 +66,54 @@ export function Document({ meta, links, children, title }: Props) {
   )
 }
 
-export function Layout({ children, url, ...rest }: Props & { url: URL }) {
+function Header({ children }: { children: Remix.RemixNode }) {
+  return (
+    <header
+      css={css`
+        background-color: var(--sidebar);
+        padding: var(--spacing-4) var(--spacing-6);
+        @media (min-width: 640px) {
+          padding: var(--spacing-6) var(--spacing-8);
+        }
+      `}
+    >
+      {children}
+    </header>
+  )
+}
+
+function Main({ children }: { children: Remix.RemixNode }) {
+  return (
+    <main
+      css={css`
+        padding: var(--spacing-4) var(--spacing-6);
+        @media (min-width: 640px) {
+          padding: var(--spacing-6) var(--spacing-8);
+        }
+      `}
+    >
+      {children}
+    </main>
+  )
+}
+export function Layout({ children, pathname, ...rest }: Props & { pathname: string }) {
   return (
     <Document {...rest}>
       <div css={{ display: 'flex' }}>
-        <Sidebar url={url} />
-        {children}
+        <Sidebar pathname={pathname} />
+        <div
+          css={css`
+            background-color: var(--muted);
+            border-radius: 0;
+            width: 100%;
+            border: 0;
+          `}
+        >
+          <Header>
+            <Search />
+          </Header>
+          <Main>{children}</Main>
+        </div>
       </div>
     </Document>
   )
