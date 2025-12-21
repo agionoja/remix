@@ -24,9 +24,9 @@ export function Sidebar({ css: _css, ...rest }: Remix.Props<'aside'>) {
   )
 }
 
-export function SidebarHeader({ css: _css, ...rest }: Remix.Props<'div'>) {
+export function SidebarHeader({ css: _css, ...rest }: Remix.Props<'header'>) {
   return (
-    <div
+    <header
       {...rest}
       css={{
         ...css`
@@ -42,9 +42,9 @@ export function SidebarHeader({ css: _css, ...rest }: Remix.Props<'div'>) {
   )
 }
 
-export function SidebarContent({ css: _css, ...rest }: Remix.Props<'div'>) {
+export function SidebarContent({ css: _css, ...rest }: Remix.Props<'nav'>) {
   return (
-    <div
+    <nav
       {...rest}
       css={{
         ...css`
@@ -60,9 +60,9 @@ export function SidebarContent({ css: _css, ...rest }: Remix.Props<'div'>) {
   )
 }
 
-export function SidebarGroup({ css: _css, ...rest }: Remix.Props<'div'>) {
+export function SidebarGroup({ css: _css, ...rest }: Remix.Props<'section'>) {
   return (
-    <div
+    <section
       {...rest}
       css={{
         ...css`
@@ -76,9 +76,9 @@ export function SidebarGroup({ css: _css, ...rest }: Remix.Props<'div'>) {
   )
 }
 
-export function SidebarGroupLabel({ css: _css, ...rest }: Remix.Props<'div'>) {
+export function SidebarGroupLabel({ css: _css, ...rest }: Remix.Props<'h3'>) {
   return (
-    <div
+    <h3
       {...rest}
       css={{
         ...css`
@@ -197,9 +197,10 @@ export function SidebarMenuButton({
     </a>
   )
 }
-export function SidebarFooter({ css: _css, ...rest }: Remix.Props<'div'>) {
+
+export function SidebarFooter({ css: _css, ...rest }: Remix.Props<'footer'>) {
   return (
-    <div
+    <footer
       {...rest}
       css={{
         ...css`
