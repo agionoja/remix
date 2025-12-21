@@ -13,7 +13,7 @@
     "jsxImportSource": "@remix-run/dom",
     "paths": {
       "#/*": ["./app/*"],
-      "#/\uD83D\uDD04": ["./routes"]
+      "#/routes": ["./routes"]
     }
   }
 }

@@ -4,7 +4,7 @@ import { ForgotPasswordView } from '#/views/auth/forgot-password.view'
 import { LoginView } from '#/views/auth/login.view'
 import { RegisterView } from '#/views/auth/register.view'
 import { ResetPasswordView } from '#/views/auth/reset-password.view'
-import { routes } from '#/🔄'
+import { routes } from '#/routes'
 import type { Controller } from '@remix-run/fetch-router'
 import { createRedirectResponse } from '@remix-run/response/redirect'
 

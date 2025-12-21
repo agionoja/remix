@@ -3,7 +3,7 @@ import { StoreEditView } from '#/views/admin/store/store.edit.view'
 import { StoreIndexView } from '#/views/admin/store/store.index.view'
 import { StoreNewView } from '#/views/admin/store/store.new.view'
 import { StoreShowView } from '#/views/admin/store/store.show.view'
-import type { routes } from '#/🔄'
+import type { routes } from '#/routes'
 import type { Controller } from '@remix-run/fetch-router'
 
 export default {

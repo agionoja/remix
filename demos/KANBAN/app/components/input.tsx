@@ -124,7 +124,6 @@ export function Label({ css: additionalCss, ...rest }: Remix.Props<'label'>) {
           font-size: var(--text-sm);
           font-weight: var(--font-medium);
           color: var(--foreground);
-          margin-bottom: var(--spacing-2);
           display: block;
         `,
         ...additionalCss,

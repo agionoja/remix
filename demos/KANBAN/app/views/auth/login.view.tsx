@@ -1,7 +1,7 @@
 import { Button } from '#/components/button'
 import { GoogleIcon } from '#/components/icons'
 import { Input } from '#/components/input'
-import { Document } from '#/assets/layout'
+import { Document } from '#/components/layout'
 import type { Flash } from '#/schema/flash'
 import { createMeta } from '#/utils/meta'
 import { css } from '#/utils/css'
@@ -12,7 +12,7 @@ import {
   AuthLayout,
   AuthLabel,
 } from '#/views/auth/components'
-import { routes } from '#/🔄'
+import { routes } from '#/routes'
 
 const meta = createMeta([
   {

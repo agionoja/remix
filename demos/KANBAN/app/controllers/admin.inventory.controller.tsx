@@ -7,7 +7,7 @@ import { InventoryProductsEditView } from '#/views/admin/inventory/inventory.pro
 import { InventoryProductsShowOverviewView } from '#/views/admin/inventory/inventory.products.show.overview.view'
 import { InventoryProductsShowAdjustmentsView } from '#/views/admin/inventory/inventory.products.show.adjustments.view'
 import { InventoryProductsShowHistoryView } from '#/views/admin/inventory/inventory.products.show.history.view'
-import type { routes } from '#/🔄'
+import type { routes } from '#/routes'
 import type { Controller } from '@remix-run/fetch-router'
 
 export default {

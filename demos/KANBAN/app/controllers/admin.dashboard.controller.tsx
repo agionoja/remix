@@ -1,7 +1,7 @@
 import { render } from '#/utils/render'
 import { DashboardIndexView } from '#/views/admin/dashboard/dashboard.index.view'
 import { DashboardSummaryView } from '#/views/admin/dashboard/dashboard.summary.view'
-import type { routes } from '#/🔄'
+import type { routes } from '#/routes'
 import type { Controller } from '@remix-run/fetch-router'
 
 export default {
