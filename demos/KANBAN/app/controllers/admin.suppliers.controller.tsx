@@ -3,7 +3,7 @@ import { SuppliersEditView } from '#/views/admin/suppliers/suppliers.edit.view'
 import { SuppliersIndexView } from '#/views/admin/suppliers/suppliers.index.view'
 import { SuppliersNewView } from '#/views/admin/suppliers/suppliers.new.view'
 import { SuppliersShowView } from '#/views/admin/suppliers/suppliers.show.view'
-import type { routes } from '#/🔄'
+import type { routes } from '#/routes'
 import type { Controller } from '@remix-run/fetch-router'
 
 export default {

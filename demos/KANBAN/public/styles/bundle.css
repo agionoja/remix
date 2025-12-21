@@ -109,7 +109,7 @@
   /* ============================================
       LAYOUT - Component dimensions
       ============================================ */
-  --sidebar-width: 240px; /* Sidebar width */
+  --sidebar-width: 300px; /* Sidebar width */
   --header-height: 64px; /* Header height */
   /* ============================================
       Z-INDEX - Layer stacking
@@ -129,7 +129,7 @@
   --screen-2xl: 1536px; /* 2X large */
 }
 
-:root[data-theme=dark] {
+:root[data-theme='dark'] {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.145 0 0);
@@ -190,7 +190,9 @@ body {
   line-height: var(--leading-normal);
   color: var(--foreground);
   background-color: var(--background);
-  transition: background-color var(--transition-base), color var(--transition-base);
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
 }
 
 /* ============================================
@@ -252,8 +254,8 @@ table {
 /* ============================================
    FORM ELEMENTS
    ============================================ */
-input[type=checkbox],
-input[type=radio] {
+input[type='checkbox'],
+input[type='radio'] {
   width: 1.6rem;
   height: 1.6rem;
   cursor: pointer;
@@ -263,7 +265,9 @@ input[type=radio] {
 input,
 textarea,
 select {
-  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 input:focus,
@@ -271,7 +275,9 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: var(--ring);
-  box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--ring);
+  box-shadow:
+    0 0 0 2px var(--background),
+    0 0 0 4px var(--ring);
 }
 
 textarea {

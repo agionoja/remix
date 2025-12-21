@@ -1,6 +1,6 @@
 // import { hydrated, type Remix } from '@remix-run/dom'
 // import { dom } from '@remix-run/events'
-// import { routes } from '#/🔄'
+// import { routes } from '#/routes'
 //
 // type LinkProps = Remix.Props<'a'> & {
 //   prefetch?: 'intent' | 'render' | 'none'

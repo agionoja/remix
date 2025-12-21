@@ -6,17 +6,72 @@
   <component name="ChangeListManager">
     <list default="true" id="8f8716a9-b3e6-48e3-9c59-622ff06378fa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/alert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/alert.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/_sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/_sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/auth/components.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/components.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/_token.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/_utilities.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.dashboard.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.dashboard.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.inventory.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.inventory.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.orders.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.orders.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.report.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.report.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.store.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.store.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.suppliers.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.suppliers.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/auth.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/upload.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/upload.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.sales-purchases.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.sales-purchases.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.low-quantity.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.low-quantity.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.top-selling.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.top-selling.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.summary.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.summary.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.index.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.edit.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.edit.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.index.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.new.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.new.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.adjustments.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.adjustments.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.history.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.history.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.overview.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.overview.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.summary.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.summary.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.index.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.items.edit.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.items.edit.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.items.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.items.index.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.items.new.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.items.new.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.items.show.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.items.show.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.summary.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.summary.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/report/report.bestselling.category.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/report/report.bestselling.category.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/report/report.bestselling.product.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/report/report.bestselling.product.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/report/report.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/report/report.index.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/report/report.overview.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/report/report.overview.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/report/report.profit-revenue.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/report/report.profit-revenue.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/store/store.edit.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/store/store.edit.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/store/store.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/store/store.index.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/store/store.new.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/store/store.new.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/store/store.show.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/store/store.show.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.edit.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.edit.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.index.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.new.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.new.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.show.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.show.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/forgot-password.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/forgot-password.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/login.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/login.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/register.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/register.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/reset-password.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/reset-password.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/_sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/_sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/_sidebar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/_sidebar.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/chunks/chunk-42EHBEJU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/chunks/chunk-42EHBEJU.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/chunks/chunk-AZQGV2YO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/chunks/chunk-AZQGV2YO.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/layout.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/sidebar.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/styles/bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/bundle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/bundle.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/bundle.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +83,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -79,45 +134,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js Test Runner.css.test.ts.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "demo/KABAN",
-    "javascript.nodejs.core.library.configured.version": "24.11.1",
-    "javascript.nodejs.core.library.typings.version": "24.10.4",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/agionoja/Code/remix/demos/KANBAN/public",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "/home/agionoja/.nvm/versions/node/v24.11.1/bin/pnpm",
-    "npm.build:css.executor": "Run",
-    "npm.dev.executor": "Run",
-    "npm.dev:browser.executor": "Run",
-    "npm.dev:css.executor": "Run",
-    "npm.start.executor": "Run",
-    "npm.typecheck.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "/home/agionoja/.nvm/versions/node/v24.11.1/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "watcher.settings",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/home/agionoja/Code/remix/node_modules/.pnpm/@typescript+native-preview@7.0.0-dev.20251125.1/node_modules/@typescript/native-preview-linux-x64/lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js Test Runner.css.test.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;demo/KABAN&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.11.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.10.4&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/agionoja/Code/remix/demos/KANBAN/public&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;/home/agionoja/.nvm/versions/node/v24.11.1/bin/pnpm&quot;,
+    &quot;npm.build:css.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev:browser.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev:css.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;npm.typecheck.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/agionoja/.nvm/versions/node/v24.11.1/lib/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/agionoja/Code/remix/node_modules/.pnpm/@typescript+native-preview@7.0.0-dev.20251125.1/node_modules/@typescript/native-preview-linux-x64/lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components" />
+      <recent name="$PROJECT_DIR$/app/assets" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.build:css">
+  <component name="RunManager" selected="npm.typecheck">
     <configuration name="build:css" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -158,11 +217,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="typecheck" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="start" />
+        <script value="typecheck" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -170,11 +229,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.typecheck" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.dev:browser" />
         <item itemvalue="npm.dev:css" />
         <item itemvalue="npm.build:css" />
-        <item itemvalue="npm.dev" />
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.dev:browser" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +253,8 @@
       <updated>1765990695621</updated>
       <workItem from="1765990696884" duration="35023000" />
       <workItem from="1766085084196" duration="19835000" />
-      <workItem from="1766137804618" duration="31319000" />
+      <workItem from="1766137804618" duration="32121000" />
+      <workItem from="1766220933711" duration="36688000" />
     </task>
     <servers />
   </component>

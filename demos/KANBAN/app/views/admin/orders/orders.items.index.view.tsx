@@ -1,4 +1,4 @@
-import { Layout } from '#/assets/layout'
+import { Layout } from '#/components/layout'
 import { createMeta } from '#/utils/meta'
 
 const meta = createMeta([

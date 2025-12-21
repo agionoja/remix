@@ -13,7 +13,7 @@ import {
   StoreIcon,
   UserIcon,
 } from '#/components/icons'
-import { routes } from '#/🔄'
+import { routes } from '#/routes'
 
 type SidebarContext = {
   isOpen: boolean

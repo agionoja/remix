@@ -1,10 +1,10 @@
 import { Card, CardHeader } from '#/components/card'
 import { SearchIcon } from '#/components/icons'
 import { Input, Label } from '#/components/input'
-import { Layout } from '#/assets/layout'
+import { Layout } from '#/components/layout'
 import { css } from '#/utils/css'
 import { render } from '#/utils/render'
-import { routes } from '#/🔄'
+import { routes } from '#/routes'
 import { Frame } from '@remix-run/dom'
 import type { BuildAction } from '@remix-run/fetch-router'
 

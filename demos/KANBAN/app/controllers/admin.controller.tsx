@@ -6,7 +6,7 @@ import adminStoreController from '#/controllers/admin.store.controller'
 import adminSuppliersController from '#/controllers/admin.suppliers.controller'
 import { render } from '#/utils/render'
 import { AdminSearchView } from '#/views/admin/admin.search.view'
-import type { routes } from '#/🔄'
+import type { routes } from '#/routes'
 import type { Controller } from '@remix-run/fetch-router'
 
 export default {
