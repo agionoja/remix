@@ -6,73 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8f8716a9-b3e6-48e3-9c59-622ff06378fa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/_sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/_sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin.dashboard.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.dashboard.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin.inventory.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.inventory.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin.orders.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.orders.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin.report.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.report.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin.store.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.store.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin.suppliers.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.suppliers.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/auth.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/upload.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/upload.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.sales-purchases.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.sales-purchases.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.low-quantity.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.low-quantity.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.top-selling.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.top-selling.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.summary.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.summary.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.index.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.edit.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.edit.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.index.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.new.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.new.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.adjustments.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.adjustments.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.history.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.history.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.overview.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.products.show.overview.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/inventory/inventory.summary.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/inventory/inventory.summary.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.index.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.items.edit.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.items.edit.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.items.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.items.index.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.items.new.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.items.new.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.items.show.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.items.show.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/orders/orders.summary.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/orders/orders.summary.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/report/report.bestselling.category.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/report/report.bestselling.category.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/report/report.bestselling.product.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/report/report.bestselling.product.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/report/report.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/report/report.index.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/report/report.overview.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/report/report.overview.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/report/report.profit-revenue.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/report/report.profit-revenue.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/store/store.edit.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/store/store.edit.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/store/store.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/store/store.index.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/store/store.new.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/store/store.new.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/store/store.show.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/store/store.show.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.edit.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.edit.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.index.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.new.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.new.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.show.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/suppliers/suppliers.show.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/auth/forgot-password.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/forgot-password.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/auth/login.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/login.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/auth/register.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/register.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/auth/reset-password.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/reset-password.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/_sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/_sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/_sidebar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/_sidebar.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/chunks/chunk-42EHBEJU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/chunks/chunk-42EHBEJU.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/chunks/chunk-AZQGV2YO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/chunks/chunk-AZQGV2YO.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/layout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/layout.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/sidebar.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/bundle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
