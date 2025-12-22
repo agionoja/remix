@@ -1,4 +1,4 @@
-import { Card, CardHeader } from '#/components/card'
+import { Card, CardContent, CardHeader, CardTitle } from '#/components/card'
 import { SearchIcon } from '#/components/icons'
 import { Input, Label } from '#/components/input'
 import { Layout } from '#/components/layout'
@@ -17,44 +17,39 @@ export const playgroundController: BuildAction<'GET', typeof routes.playground> 
   )
   return render(
     <Layout title={'Playground'} pathname={ctx.url.pathname}>
+      <h1 class={'sr-only'}>Dashboard</h1>
       <Card
         css={css`
-          background-color: var(--secondary);
-          border-radius: 0;
-          width: 100%;
+          width: 60%;
         `}
       >
         <CardHeader>
-          <form action={routes.admin.search.href()}>
-            <Label
-              css={css`
-                display: flex;
-                gap: var(--spacing-3);
-                align-items: center;
-                position: relative;
-                width: 30rem;
-              `}
-            >
-              <SearchIcon
-                css={css`
-                  position: absolute;
-                  left: var(--spacing-2_5);
-                  top: 50%;
-                  transform: translateY(-50%);
-                `}
-              />
-              <Input
-                css={css`
-                  padding-left: var(--spacing-10);
-                  @media (min-width: 640px) {
-                    padding-left: var(--spacing-12);
-                  }
-                `}
-                placeholder={'Search product, supplier, order'}
-              />
-            </Label>
-          </form>
+          <CardTitle>Sales Overview</CardTitle>
         </CardHeader>
+        <CardContent
+          css={css`
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-4);
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+          `}
+        >
+          <div>
+            <img height={25} width={23} src="/icons/Sales.svg" alt="Sales Icon" />
+          </div>
+
+          <div
+            css={css`
+              display: flex;
+              gap: var(--spacing-4);
+            `}
+          >
+            <span>$7464</span>
+            <span>Sales</span>
+          </div>
+        </CardContent>
       </Card>
     </Layout>,
   )

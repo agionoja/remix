@@ -49,6 +49,7 @@ const mainNavItems = [
   { href: routes.admin.inventory.index.href(), icon: InventoryIcon, label: 'Inventory' },
   { href: routes.admin.orders.index.href(), icon: OderIcon, label: 'Orders' },
   { href: routes.admin.report.index.href(), icon: ReportIcon, label: 'Reports' },
+  { href: routes.playground.href(), icon: ReportIcon, label: 'Playground' },
 ]
 
 const managementNavItems = [

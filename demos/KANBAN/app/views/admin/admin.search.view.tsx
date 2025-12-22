@@ -8,10 +8,15 @@ const meta = createMeta([
   },
 ])
 
-export function AdminSearchView({ pathname }: { pathname: string }) {
+type Props = {
+  pathname: string
+  search?: string
+}
+
+export function AdminSearchView({ pathname, search }: Props) {
   return (
     <Layout pathname={pathname} title="Search" meta={meta}>
-      Admin Search
+      {search ? search : 'Not found'}
     </Layout>
   )
 }
