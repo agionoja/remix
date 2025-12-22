@@ -1,4 +1,3 @@
-// stat-card.tsx
 import type { Remix } from '@remix-run/dom'
 import { css } from '#/utils/css'
 
