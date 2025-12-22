@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8716a9-b3e6-48e3-9c59-622ff06378fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/icons/Cancel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/Categories.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/Cost.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/On the way.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/Profit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/Purchase bag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/Revenue.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/Sales.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/stat-card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
