@@ -98,43 +98,17 @@ export function Document({ meta, links, children, title }: Props) {
   )
 }
 
-function Header({ children }: { children: Remix.RemixNode }) {
-  return (
-    <header
-      css={css`
-        background-color: var(--sidebar);
-        padding: var(--spacing-4) var(--spacing-6);
-        @media (min-width: 640px) {
-          padding: var(--spacing-6) var(--spacing-8);
-        }
-      `}
-    >
-      {children}
-    </header>
-  )
-}
-
-function Main({ children }: { children: Remix.RemixNode }) {
-  return (
-    <main
-      css={css`
-        padding: var(--spacing-4) var(--spacing-6);
-        @media (min-width: 640px) {
-          padding: var(--spacing-6) var(--spacing-8);
-        }
-      `}
-    >
-      {children}
-    </main>
-  )
-}
-
 export function Layout({ children, pathname, ...rest }: Props & { pathname: string }) {
   const isActive = (href: string) => pathname === href
 
   return (
     <Document {...rest}>
-      <div css={{ display: 'flex' }}>
+      <div
+        css={css`
+          display: flex;
+          height: 100vh;
+        `}
+      >
         <Sidebar>
           <SidebarHeader>
             <LogoIcon />
@@ -212,16 +186,36 @@ export function Layout({ children, pathname, ...rest }: Props & { pathname: stri
         {/* Main Content Area */}
         <div
           css={css`
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
             background-color: var(--muted);
-            border-radius: 0;
-            width: 100%;
-            border: 0;
           `}
         >
-          <Header>
+          <header
+            css={css`
+              background-color: var(--sidebar);
+              padding: var(--spacing-4) var(--spacing-6);
+              @media (min-width: 640px) {
+                padding: var(--spacing-6) var(--spacing-8);
+              }
+            `}
+          >
             <Search />
-          </Header>
-          <Main>{children}</Main>
+          </header>
+          <main
+            css={css`
+              flex: 1;
+              overflow-y: auto;
+              padding: var(--spacing-4) var(--spacing-6);
+              @media (min-width: 640px) {
+                padding: var(--spacing-6) var(--spacing-8);
+              }
+            `}
+          >
+            {children}
+          </main>
         </div>
       </div>
     </Document>

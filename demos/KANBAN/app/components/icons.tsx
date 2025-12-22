@@ -65,9 +65,9 @@ export function BagIcon(props: IconProps) {
   )
 }
 
-export function HomeIcon() {
+export function HomeIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
       <path
         stroke="currentColor"
         stroke-width="1.5"
@@ -90,9 +90,9 @@ export function InventoryIcon(props: IconProps) {
   )
 }
 
-export function OrderIcon() {
+export function OrderIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
       <path
         fill="currentColor"
         stroke="currentColor"
@@ -117,9 +117,9 @@ export function NotificationIcon(props: IconProps) {
   )
 }
 
-export function LogoIcon() {
+export function LogoIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" {...props}>
       <path fill={'#009ED8'} d="M24 3.974 44.785 14.98v22.013L24 48 3.215 36.993V14.98L24 3.974Z" />
       <path
         fill={'#0ACF83'}
@@ -203,6 +203,26 @@ export function OderIcon(props: IconProps) {
         fill="currentColor"
         stroke="currentColor"
         stroke-width="0.2"
+      />
+    </svg>
+  )
+}
+
+export function QuantityIcon(props: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" {...props}>
+      <rect width="30" height="30" fill="#FFEEDB" rx="4" />
+      <path
+        fill="#DBA362"
+        stroke="#DBA362"
+        stroke-width=".2"
+        d="M23.438 2.9c.499 0 .971.218 1.313.588l.138.167.001.001 2.56 3.574.114.159h-.057c.004.03.003.06-.007.093V24.98c0 .887-.729 1.649-1.649 1.649H3.961c-.92 0-1.649-.73-1.649-1.65V7.469c0-.088.043-.17.07-.224l.003-.007.005-.007L4.95 3.66c.318-.477.887-.76 1.454-.76h17.035ZM3.108 24.98a.86.86 0 0 0 .853.853h21.92a.86.86 0 0 0 .853-.853V7.865h-8.14v4.993a.765.765 0 0 1-.341.62l-.008.004-.009.004c-.223.096-.468.136-.714-.005l-2.601-1.403-2.604 1.404a.677.677 0 0 1-.345.102.702.702 0 0 1-.383-.107.725.725 0 0 1-.342-.619V7.865h-8.14V24.98ZM12.042 7.54v5.24l2.83-1.56.048-.026.047.027 2.83 1.529V7.51l-1.077-3.815H13.15l-1.107 3.846Zm6.467-.472h7.86l-2.12-2.968V4.1a1.044 1.044 0 0 0-.81-.405h-5.885l.955 3.374ZM6.403 3.695a.962.962 0 0 0-.812.405L3.47 7.07h7.89l.955-3.375H6.403Z"
+      />
+      <path
+        fill="#DBA362"
+        stroke="#DBA362"
+        stroke-width=".2"
+        d="M17.403 7.07v.795h-4.965V7.07h4.965Z"
       />
     </svg>
   )
