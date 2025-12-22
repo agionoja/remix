@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '#/components/card'
-import { SearchIcon } from '#/components/icons'
+import { CostIcon, ProfitIcon, RevenueIcon, SalesIcon, SearchIcon } from '#/components/icons'
 import { Input, Label } from '#/components/input'
 import { Layout } from '#/components/layout'
 import { css } from '#/utils/css'
@@ -23,6 +23,7 @@ export const playgroundController: BuildAction<'GET', typeof routes.playground> 
       <Frame src={routes.admin.inventory.products.index.href()} />
     </div>
   )
+
   return render(
     <Layout title={'Playground'} pathname={ctx.url.pathname}>
       <h1 class={'sr-only'}>Dashboard</h1>
@@ -34,7 +35,7 @@ export const playgroundController: BuildAction<'GET', typeof routes.playground> 
           <StatCardGroup>
             <StatCard>
               <StatCardIcon>
-                <img src="/icons/Sales.svg" alt="" width={24} height={24} />
+                <SalesIcon />
               </StatCardIcon>
               <StatCardContent>
                 <StatCardValue>₹ 832</StatCardValue>
@@ -44,7 +45,7 @@ export const playgroundController: BuildAction<'GET', typeof routes.playground> 
 
             <StatCard>
               <StatCardIcon>
-                <img src="/icons/Revenue.svg" alt="" width={24} height={24} />
+                <RevenueIcon />
               </StatCardIcon>
               <StatCardContent>
                 <StatCardValue>₹ 18,300</StatCardValue>
@@ -54,7 +55,7 @@ export const playgroundController: BuildAction<'GET', typeof routes.playground> 
 
             <StatCard>
               <StatCardIcon>
-                <img src="/icons/Profit.svg" alt="" width={24} height={24} />
+                <ProfitIcon />
               </StatCardIcon>
               <StatCardContent>
                 <StatCardValue>₹ 868</StatCardValue>
@@ -64,7 +65,7 @@ export const playgroundController: BuildAction<'GET', typeof routes.playground> 
 
             <StatCard>
               <StatCardIcon>
-                <img src="/icons/Cost.svg" alt="" width={24} height={24} />
+                <CostIcon />
               </StatCardIcon>
               <StatCardContent>
                 <StatCardValue>₹ 17,432</StatCardValue>

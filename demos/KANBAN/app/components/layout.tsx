@@ -2,24 +2,24 @@ import {
   HomeIcon,
   InventoryIcon,
   LogoIcon,
+  LogoutIcon,
+  OrderIcon,
   ReportIcon,
+  SettingsIcon,
   StoreIcon,
   UserIcon,
-  OderIcon,
-  SettingsIcon,
-  LogoutIcon,
 } from '#/components/icons'
 import {
   Sidebar,
   SidebarContent,
+  SidebarFooter,
   SidebarGroup,
-  SidebarGroupLabel,
   SidebarGroupContent,
+  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
-  SidebarMenuItem,
   SidebarMenuButton,
-  SidebarFooter,
+  SidebarMenuItem,
 } from '#/components/sidebar'
 import { Search } from '#/components/search'
 import { css } from '#/utils/css'
@@ -47,7 +47,7 @@ const script = String.raw
 const mainNavItems = [
   { href: routes.admin.dashboard.index.href(), icon: HomeIcon, label: 'Dashboard' },
   { href: routes.admin.inventory.index.href(), icon: InventoryIcon, label: 'Inventory' },
-  { href: routes.admin.orders.index.href(), icon: OderIcon, label: 'Orders' },
+  { href: routes.admin.orders.index.href(), icon: OrderIcon, label: 'Orders' },
   { href: routes.admin.report.index.href(), icon: ReportIcon, label: 'Reports' },
   { href: routes.playground.href(), icon: ReportIcon, label: 'Playground' },
 ]
