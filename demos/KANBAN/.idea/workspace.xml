@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8716a9-b3e6-48e3-9c59-622ff06378fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/icons/Quantity.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/icons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/Store.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/icons/Store.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/bundle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,39 +74,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Node.js Test Runner.css.test.ts.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;demo/KABAN&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.11.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.10.4&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/agionoja/Code/remix/demos/KANBAN/public&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;/home/agionoja/.nvm/versions/node/v24.11.1/bin/pnpm&quot;,
-    &quot;npm.build:css.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev:browser.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev:css.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;npm.typecheck.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/agionoja/.nvm/versions/node/v24.11.1/lib/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/agionoja/Code/remix/node_modules/.pnpm/@typescript+native-preview@7.0.0-dev.20251125.1/node_modules/@typescript/native-preview-linux-x64/lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js Test Runner.css.test.ts.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "demo/KABAN",
+    "javascript.nodejs.core.library.configured.version": "24.11.1",
+    "javascript.nodejs.core.library.typings.version": "24.10.4",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/agionoja/Code/remix/demos/KANBAN/public",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "/home/agionoja/.nvm/versions/node/v24.11.1/bin/pnpm",
+    "npm.build:css.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.dev:browser.executor": "Run",
+    "npm.dev:css.executor": "Run",
+    "npm.start.executor": "Run",
+    "npm.typecheck.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "/home/agionoja/.nvm/versions/node/v24.11.1/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/home/agionoja/Code/remix/node_modules/.pnpm/@typescript+native-preview@7.0.0-dev.20251125.1/node_modules/@typescript/native-preview-linux-x64/lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -112,7 +117,7 @@
       <recent name="$PROJECT_DIR$/app/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.dev:css">
     <configuration name="build:css" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -165,18 +170,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev:css" />
+        <item itemvalue="npm.build:css" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.typecheck" />
         <item itemvalue="npm.dev:browser" />
-        <item itemvalue="npm.dev:css" />
-        <item itemvalue="npm.build:css" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-WS-253.28294.332" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.143" />
       </set>
     </attachedChunks>
   </component>
@@ -192,6 +197,7 @@
       <workItem from="1766137804618" duration="32121000" />
       <workItem from="1766220933711" duration="36688000" />
       <workItem from="1766357585645" duration="6758000" />
+      <workItem from="1766401143603" duration="4806000" />
     </task>
     <servers />
   </component>
