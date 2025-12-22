@@ -7,6 +7,7 @@ import { routes } from '#/routes'
 export function Search() {
   return (
     <form
+      method={'GET'}
       action={routes.admin.search.href()}
       css={css`
         display: flex;
@@ -32,6 +33,9 @@ export function Search() {
           `}
         />
         <Input
+          type={'search'}
+          name={'q'}
+          defaultValue={''}
           css={css`
             padding-left: var(--spacing-10);
             @media (min-width: 640px) {

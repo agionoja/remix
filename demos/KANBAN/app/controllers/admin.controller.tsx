@@ -8,12 +8,17 @@ import { render } from '#/utils/render'
 import { AdminSearchView } from '#/views/admin/admin.search.view'
 import type { routes } from '#/routes'
 import type { Controller } from '@remix-run/fetch-router'
+import { type } from 'arktype'
 
 export default {
   middleware: [],
   actions: {
     search(ctx) {
-      return render(<AdminSearchView pathname={ctx.url.pathname} />)
+      const q = type('string').assert(ctx.url.searchParams.get('q'))
+
+      return render(<AdminSearchView search={q} pathname={ctx.url.pathname} />, {
+        status: q ? 200 : 404,
+      })
     },
     dashboard: adminDashboardController,
     inventory: adminInventoryController,

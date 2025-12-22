@@ -19,9 +19,9 @@ export function Card({ css: additionalCss, ...rest }: Remix.Props<'div'>) {
   )
 }
 
-export function CardHeader({ css: additionalCss, ...rest }: Remix.Props<'div'>) {
+export function CardHeader({ css: additionalCss, ...rest }: Remix.Props<'header'>) {
   return (
-    <div
+    <header
       {...rest}
       css={{
         ...css`
@@ -88,9 +88,9 @@ export function CardContent({ css: additionalCss, ...rest }: Remix.Props<'div'>)
   )
 }
 
-export function CardFooter({ css: additionalCss, ...rest }: Remix.Props<'div'>) {
+export function CardFooter({ css: additionalCss, ...rest }: Remix.Props<'footer'>) {
   return (
-    <div
+    <footer
       {...rest}
       css={{
         ...css`

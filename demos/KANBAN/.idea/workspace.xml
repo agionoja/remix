@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8716a9-b3e6-48e3-9c59-622ff06378fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/icons/Cancel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/Categories.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/Cost.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/On the way.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/Profit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/Purchase bag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/Revenue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/Sales.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +47,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="component" />
-                    <option name="lastUsedInstant" value="1766071808" />
+                    <option name="branchName" value="demo/KABAN" />
+                    <option name="lastUsedInstant" value="1766342553" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/pretty-logging" />
+                    <option name="lastUsedInstant" value="1766342517" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="pedro/route-pattern-trie" />
                     <option name="lastUsedInstant" value="1766071526" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="demo/KABAN" />
-                    <option name="lastUsedInstant" value="1766071525" />
                   </RecentBranch>
                 </list>
               </option>
@@ -96,7 +109,7 @@
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
     &quot;npm.typecheck.executor&quot;: &quot;Run&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/agionoja/.nvm/versions/node/v24.11.1/lib/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/agionoja/Code/remix/node_modules/.pnpm/@typescript+native-preview@7.0.0-dev.20251125.1/node_modules/@typescript/native-preview-linux-x64/lib&quot;
   }
@@ -106,11 +119,12 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/icons" />
       <recent name="$PROJECT_DIR$/app/components" />
       <recent name="$PROJECT_DIR$/app/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.typecheck">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build:css" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -163,8 +177,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.typecheck" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.typecheck" />
         <item itemvalue="npm.dev:browser" />
         <item itemvalue="npm.dev:css" />
         <item itemvalue="npm.build:css" />
@@ -189,6 +203,7 @@
       <workItem from="1766085084196" duration="19835000" />
       <workItem from="1766137804618" duration="32121000" />
       <workItem from="1766220933711" duration="36688000" />
+      <workItem from="1766357585645" duration="6758000" />
     </task>
     <servers />
   </component>
