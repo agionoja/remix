@@ -1,4 +1,3 @@
-import type { Flash } from '#/schema/flash'
 import { css } from '#/utils/css'
 import type { Remix } from '@remix-run/dom'
 

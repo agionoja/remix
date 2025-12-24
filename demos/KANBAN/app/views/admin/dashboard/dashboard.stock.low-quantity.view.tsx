@@ -1,5 +1,5 @@
-import { Layout } from '#/components/layout'
 import { createMeta } from '#/utils/meta'
+import { Card, CardHeader, CardTitle } from '#/components/card'
 
 const meta = createMeta([
   {
@@ -8,10 +8,14 @@ const meta = createMeta([
   },
 ])
 
-export function DashboardStockLowQuantityView({ pathname }: { pathname: string }) {
+export function DashboardStockLowQuantityView() {
   return (
-    <Layout pathname={pathname} title="Low Quantity Stock" meta={meta}>
-      Dashboard Stock Low Quantity View
-    </Layout>
+    // <Document title="Low Quantity Stock" meta={meta}>
+    <Card>
+      <CardHeader>
+        <CardTitle>Low Quantity Stock</CardTitle>
+      </CardHeader>
+    </Card>
+    // </Document>
   )
 }

@@ -5,7 +5,8 @@ import adminReportController from '#/controllers/admin.report.controller'
 import adminStoreController from '#/controllers/admin.store.controller'
 import adminSuppliersController from '#/controllers/admin.suppliers.controller'
 import { render } from '#/utils/render'
-import { AdminSearchView } from '#/views/admin/admin.search.view'
+import { Layout } from '#/components/layout'
+import { createMeta } from '#/utils/meta'
 import type { routes } from '#/routes'
 import type { Controller } from '@remix-run/fetch-router'
 import { type } from 'arktype'
@@ -16,9 +17,21 @@ export default {
     search(ctx) {
       const q = type('string').assert(ctx.url.searchParams.get('q'))
 
-      return render(<AdminSearchView search={q} pathname={ctx.url.pathname} />, {
-        status: q ? 200 : 404,
-      })
+      return render(
+        <Layout
+          pathname={ctx.url.pathname}
+          title="Search"
+          meta={createMeta([
+            {
+              name: 'description',
+              content: 'Search across inventory, orders, suppliers, and other data.',
+            },
+          ])}
+        >
+          {q ? q : 'Not found'}
+        </Layout>,
+        { status: q ? 200 : 404 },
+      )
     },
     dashboard: adminDashboardController,
     inventory: adminInventoryController,

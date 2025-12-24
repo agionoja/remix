@@ -1,18 +1,7 @@
-import { type Remix, hydrated } from '@remix-run/dom'
+import { hydrated, type Remix } from '@remix-run/dom'
 import { press } from '@remix-run/events/press'
 import { css } from '#/utils/css'
-import {
-  HomeIcon,
-  InventoryIcon,
-  LogoIcon,
-  LogoutIcon,
-  OderIcon,
-  ReportIcon,
-  SettingsIcon,
-  SidebarIcon,
-  StoreIcon,
-  UserIcon,
-} from '#/components/icons'
+import { SidebarIcon } from '#/components/icons'
 import { routes } from '#/routes'
 
 type SidebarContext = {

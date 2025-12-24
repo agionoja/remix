@@ -1,5 +1,5 @@
-import { Layout } from '#/components/layout'
 import { createMeta } from '#/utils/meta'
+import { Card, CardHeader, CardTitle } from '#/components/card'
 
 const meta = createMeta([
   {
@@ -8,10 +8,14 @@ const meta = createMeta([
   },
 ])
 
-export function DashboardStockTopSellingView({ pathname }: { pathname: string }) {
+export function DashboardStockTopSellingView() {
   return (
-    <Layout pathname={pathname} title="Dashboard" meta={meta}>
-      Dashboard Stock Top Selling View
-    </Layout>
+    // <Document title="Dashboard" meta={meta}>
+    <Card>
+      <CardHeader>
+        <CardTitle>Top Selling Stock</CardTitle>
+      </CardHeader>
+    </Card>
+    // </Document>
   )
 }

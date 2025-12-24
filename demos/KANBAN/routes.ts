@@ -6,7 +6,7 @@ export const routes = route({
   playground: get('/playground'),
 
   account: route('/account', {
-    settings: "settings"
+    settings: 'settings',
   }),
 
   auth: {
@@ -44,7 +44,6 @@ export const routes = route({
 
     dashboard: route('/dashboard', {
       index: get('/'),
-      summary: get('/summary'),
       salesAndPurchases: get('/sales-purchases'),
       stock: route('/stock', {
         topSelling: get('/top-selling'),

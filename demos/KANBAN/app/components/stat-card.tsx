@@ -15,7 +15,7 @@ export function StatCard({ css: _css, ...rest }: Remix.Props<'div'>) {
           flex-direction: column;
           gap: var(--spacing-4);
           align-items: center;
-          padding: var(--spacing-4);
+          //padding: var(--spacing-4);
           border-right: 1px solid var(--border);
 
           &:last-child {

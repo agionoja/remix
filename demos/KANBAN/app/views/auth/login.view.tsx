@@ -9,8 +9,8 @@ import {
   AuthForm,
   AuthFormLayout,
   AuthHeader,
-  AuthLayout,
   AuthLabel,
+  AuthLayout,
 } from '#/views/auth/components'
 import { routes } from '#/routes'
 

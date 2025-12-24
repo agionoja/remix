@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8716a9-b3e6-48e3-9c59-622ff06378fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/icons/Quantity.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/dashboard/components.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/prettier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/icons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/stat-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/stat-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.dashboard.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.dashboard.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/frame.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/frame.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/bundle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.sales-purchases.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.sales-purchases.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.low-quantity.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.low-quantity.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.top-selling.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.top-selling.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.summary.view.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/sessions/08/7fe7952418b87699c51299a415678925afac48a8506d6245957fd93193d6fb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +111,7 @@
     "npm.start.executor": "Run",
     "npm.typecheck.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/home/agionoja/.nvm/versions/node/v24.11.1/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "actions.on.save",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
     "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "/home/agionoja/Code/remix/node_modules/.pnpm/@typescript+native-preview@7.0.0-dev.20251125.1/node_modules/@typescript/native-preview-linux-x64/lib"
   }
@@ -117,7 +126,7 @@
       <recent name="$PROJECT_DIR$/app/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev:css">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build:css" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -170,9 +179,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.dev:css" />
         <item itemvalue="npm.build:css" />
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.typecheck" />
         <item itemvalue="npm.dev:browser" />
       </list>
@@ -197,7 +206,12 @@
       <workItem from="1766137804618" duration="32121000" />
       <workItem from="1766220933711" duration="36688000" />
       <workItem from="1766357585645" duration="6758000" />
-      <workItem from="1766401143603" duration="4806000" />
+      <workItem from="1766401143603" duration="13387000" />
+      <workItem from="1766424775962" duration="218000" />
+      <workItem from="1766425258540" duration="24713000" />
+      <workItem from="1766504597926" duration="14949000" />
+      <workItem from="1766561178161" duration="7653000" />
+      <workItem from="1766584534765" duration="11037000" />
     </task>
     <servers />
   </component>
