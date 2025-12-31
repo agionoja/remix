@@ -5,22 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8716a9-b3e6-48e3-9c59-622ff06378fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/admin/dashboard/components.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/stat-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/stat-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin.dashboard.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.dashboard.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/frame.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/frame.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/admin.search.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/upload.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/upload.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/components.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/components.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.sales-purchases.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.sales-purchases.view.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.low-quantity.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.low-quantity.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.top-selling.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.top-selling.view.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.summary.view.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/sessions/08/7fe7952418b87699c51299a415678925afac48a8506d6245957fd93193d6fb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/sessions/80/0dc3ef16ac4157a4467624decabd1d397477559c122013594e04692963853e" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,39 +80,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js Test Runner.css.test.ts.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "demo/KABAN",
-    "javascript.nodejs.core.library.configured.version": "24.11.1",
-    "javascript.nodejs.core.library.typings.version": "24.10.4",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/agionoja/Code/remix/demos/KANBAN/public",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "/home/agionoja/.nvm/versions/node/v24.11.1/bin/pnpm",
-    "npm.build:css.executor": "Run",
-    "npm.dev.executor": "Run",
-    "npm.dev:browser.executor": "Run",
-    "npm.dev:css.executor": "Run",
-    "npm.start.executor": "Run",
-    "npm.typecheck.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "/home/agionoja/.nvm/versions/node/v24.11.1/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.typescriptcompiler",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/home/agionoja/Code/remix/node_modules/.pnpm/@typescript+native-preview@7.0.0-dev.20251125.1/node_modules/@typescript/native-preview-linux-x64/lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js Test Runner.css.test.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;demo/KABAN&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.11.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.10.4&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/agionoja/Code/remix/demos/KANBAN/public&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;/home/agionoja/.nvm/versions/node/v24.11.1/bin/pnpm&quot;,
+    &quot;npm.build:css.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev:browser.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev:css.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;npm.typecheck.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/agionoja/.nvm/versions/node/v24.11.1/lib/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/agionoja/Code/remix/node_modules/.pnpm/@typescript+native-preview@7.0.0-dev.20251125.1/node_modules/@typescript/native-preview-linux-x64/lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -211,7 +208,14 @@
       <workItem from="1766425258540" duration="24713000" />
       <workItem from="1766504597926" duration="14949000" />
       <workItem from="1766561178161" duration="7653000" />
-      <workItem from="1766584534765" duration="11037000" />
+      <workItem from="1766584534765" duration="31896000" />
+      <workItem from="1766712420179" duration="3912000" />
+      <workItem from="1766748769135" duration="8288000" />
+      <workItem from="1766785839909" duration="41882000" />
+      <workItem from="1767027137162" duration="311000" />
+      <workItem from="1767031638128" duration="1232000" />
+      <workItem from="1767091256439" duration="1249000" />
+      <workItem from="1767133009028" duration="5832000" />
     </task>
     <servers />
   </component>

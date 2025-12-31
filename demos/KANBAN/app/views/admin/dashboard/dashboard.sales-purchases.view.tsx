@@ -1,4 +1,3 @@
-import { Document } from '#/components/layout'
 import { createMeta } from '#/utils/meta'
 import { Card, CardContent, CardHeader, CardTitle } from '#/components/card'
 import { css } from '#/utils/css'
@@ -15,26 +14,26 @@ const meta = createMeta([
 
 export function DashboardSalesPurchasesView() {
   return (
-    <Document>
-      <Card>
-        <CardHeader
-          css={css`
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-          `}
-        >
-          <CardTitle>Sales and Purchases</CardTitle>
-          <form method={'GET'} action={routes.admin.dashboard.salesAndPurchases.href()}>
-            <Button variant={'ghost'}>
-              <CalenderIcon />
-              <span>Weekly</span>
-            </Button>
-          </form>
-        </CardHeader>
+    // <Document>
+    <Card>
+      <CardHeader
+        css={css`
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        `}
+      >
+        <CardTitle>Sales and Purchases</CardTitle>
+        <form method={'GET'} action={routes.admin.dashboard.salesAndPurchases.href()}>
+          <Button variant={'ghost'}>
+            <CalenderIcon />
+            <span>Weekly</span>
+          </Button>
+        </form>
+      </CardHeader>
 
-        <CardContent></CardContent>
-      </Card>
-    </Document>
+      <CardContent></CardContent>
+    </Card>
+    // </Document>
   )
 }

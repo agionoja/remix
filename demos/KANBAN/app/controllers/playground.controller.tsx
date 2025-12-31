@@ -14,7 +14,7 @@ import {
   StatCardValue,
 } from '#/components/stat-card'
 
-export const playgroundController: BuildAction<'GET', typeof routes.playground> = (ctx) => {
+export const playgroundAction: BuildAction<'GET', typeof routes.playground> = (ctx) => {
   let InventoryIndex = (
     <div>
       <Frame src={routes.admin.inventory.summary.href()} />

@@ -22,28 +22,6 @@ import {
   UserIcon,
 } from '#/components/icons'
 
-// dashboard-grid.tsx
-export function DashboardGrid({ css: _css, ...rest }: Remix.Props<'div'>) {
-  return (
-    <div
-      {...rest}
-      css={{
-        ...css`
-          display: grid;
-          gap: var(--spacing-6);
-          grid-template-columns: 1fr;
-
-          @media (min-width: 1024px) {
-            grid-template-columns: 2fr 1fr;
-            grid-auto-rows: min-content;
-          }
-        `,
-        ..._css,
-      }}
-    />
-  )
-}
-
 export function OrderSummary() {
   return (
     <Card>

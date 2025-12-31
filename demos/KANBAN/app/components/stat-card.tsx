@@ -16,8 +16,9 @@ export function StatCard({ css: _css, ...rest }: Remix.Props<'div'>) {
           gap: var(--spacing-4);
           align-items: center;
           //padding: var(--spacing-4);
-          border-right: 1px solid var(--border);
-
+          @media (min-width: 640px) {
+            border-right: 1px solid var(--border);
+          }
           &:last-child {
             border-right: none;
           }
@@ -127,12 +128,11 @@ export function StatCardGroup({ css: _css, ...rest }: Remix.Props<'div'>) {
       css={{
         ...css`
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-          gap: var(--spacing-4);
-
+          grid-template-columns: 1fr;
           @media (min-width: 640px) {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
           }
+          gap: var(--spacing-4);
         `,
         ..._css,
       }}
