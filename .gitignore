@@ -6,5 +6,6 @@ reference/
 .tmp/
 
 .env
+.idea
 
 /reference
