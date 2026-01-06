@@ -39,41 +39,6 @@ const meta = createMeta([
   },
 ])
 
-console.log(
-  [
-    1185, 457, 3024, 1266, 1015, 325, 744, 298, 1175, 1113, 1103, 952, 3991, 1241, 1024, 758, 1784,
-    839, 892, 449, 1534, 1257, 1597, 1343, 381, 1925, 844, 1690, 1045, 2220, 786, 956, 1149, 1207,
-    765, 671, 1105, 1216, 998, 975, 2016, 893, 752, 1094, 1078, 977, 1590, 1350, 2292, 408, 744,
-    1011, 1039, 1068, 1259, 1117, 980, 681, 506, 1179, 1426, 1031, 1073, 1198, 782, 953, 713, 1244,
-    1220, 1573, 1372,
-  ].reduce((sum, acc) => sum + acc, 0),
-)
-
-const counts = [
-  1185, 457, 3024, 1266, 1015, 325, 744, 298, 1175, 1113, 1103, 952, 3991, 1241, 1024, 758, 1784,
-  839, 892, 449, 1534, 1257, 1597, 1343, 381, 1925, 844, 1690, 1045, 2220, 786, 956, 1149, 1207,
-  765, 671, 1105, 1216, 998, 975, 2016, 893, 752, 1094, 1078, 977, 1590, 1350, 2292, 408, 744, 1011,
-  1039, 1068, 1259, 1117, 980, 681, 506, 1179, 1426, 1031, 1073, 1198, 782, 953, 713, 1244, 1220,
-  1573, 1372,
-]
-const workingCPS = 15.47
-const offset = 0 // seconds late
-
-let time = offset
-counts.forEach((chars, i) => {
-  const duration = chars / workingCPS
-  const start = time
-  const end = time + duration
-  console.log(`Scene ${i + 1}: ${formatTime(start)} → ${formatTime(end)}`)
-  time = end
-})
-
-function formatTime(secs: number) {
-  const h = Math.floor(secs / 3600)
-  const m = Math.floor((secs % 3600) / 60)
-  const s = Math.floor(secs % 60)
-  return `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
-}
 
 export function DashboardIndexView({ pathname }: { pathname: string }) {
   return (
