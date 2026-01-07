@@ -5,9 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0acfe6d7-d7ef-4a56-ae06-9249235f53a3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/views/admin/dashboard/dashboard.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/views/admin/dashboard/dashboard.index.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/.changes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/async-context-middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/compression-middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/cookie.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/fetch-proxy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/fetch-router.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/file-storage.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/file-storage/fs.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/file-storage/memory.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/form-data-middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/form-data-parser.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/fs.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/headers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/html-template.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/interaction.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/interaction/form.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/interaction/keys.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/interaction/popover.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/interaction/press.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/lazy-file.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/logger-middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/method-override-middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/mime.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/multipart-parser.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/multipart-parser/node.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/node-fetch-server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/response/compress.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/response/file.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/response/html.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/response/redirect.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/route-pattern.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/session-middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/session.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/session/cookie-storage.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/session/fs-storage.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/session/memory-storage.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/static-middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/tar-parser.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/tsconfig.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/remix/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/changes-preview.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/changes-validate.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/changes-version.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/create-github-release.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/generate-remix.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/changes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/color.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/fs.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/github-releases.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/packages.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/process.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/semver.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
