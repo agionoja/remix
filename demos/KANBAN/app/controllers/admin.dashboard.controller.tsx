@@ -1,7 +1,7 @@
 import { render } from '#/utils/render'
 import { DashboardIndexView } from '#/views/admin/dashboard/dashboard.index.view'
 import { routes } from '#/routes'
-import type { Controller } from '@remix-run/fetch-router'
+import type { Controller } from 'remix/fetch-router'
 import { DashboardSalesPurchasesView } from '#/views/admin/dashboard/dashboard.sales-purchases.view'
 import { DashboardStockLowQuantityView } from '#/views/admin/dashboard/dashboard.stock.low-quantity.view'
 import { DashboardStockTopSellingView } from '#/views/admin/dashboard/dashboard.stock.top-selling.view'

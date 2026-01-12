@@ -1,4 +1,4 @@
-import { form, get, post, resources, route } from '@remix-run/fetch-router'
+import { form, get, post, resources, route } from 'remix'
 
 export const routes = route({
   assets: get('/assets/*path'),
@@ -24,7 +24,7 @@ export const routes = route({
     }),
   },
 
-  admin: route('/admin', {
+  admin: route('/', {
     search: get('/search'),
     stores: resources('/stores', { param: 'storeId' }),
 

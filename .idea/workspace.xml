@@ -5,63 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0acfe6d7-d7ef-4a56-ae06-9249235f53a3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/packages/remix/.changes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/async-context-middleware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/compression-middleware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/cookie.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/fetch-proxy.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/fetch-router.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/file-storage.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/file-storage/fs.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/file-storage/memory.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/form-data-middleware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/form-data-parser.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/fs.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/headers.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/html-template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/interaction.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/interaction/form.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/interaction/keys.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/interaction/popover.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/interaction/press.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/lazy-file.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/logger-middleware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/method-override-middleware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/mime.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/multipart-parser.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/multipart-parser/node.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/node-fetch-server.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/response/compress.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/response/file.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/response/html.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/response/redirect.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/route-pattern.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/session-middleware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/session.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/session/cookie-storage.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/session/fs-storage.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/session/memory-storage.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/static-middleware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/src/lib/tar-parser.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/tsconfig.build.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/remix/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/changes-preview.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/changes-validate.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/changes-version.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/create-github-release.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/generate-remix.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/utils/changes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/utils/color.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/utils/fs.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/utils/github-releases.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/utils/packages.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/utils/process.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/utils/semver.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/components/icons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/components/icons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.dashboard.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.dashboard.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.inventory.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.inventory.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.orders.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.orders.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.report.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.report.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.store.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.store.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.suppliers.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/controllers/admin.suppliers.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/controllers/auth.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/controllers/auth.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/controllers/playground.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/controllers/playground.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/controllers/upload.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/controllers/upload.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/utils/meta.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/utils/meta.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/utils/render.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/utils/render.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/utils/session.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/utils/session.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/app/views/auth/components.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/app/views/auth/components.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/images.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/public/icons/Logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/public/icons/Logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/KANBAN/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demos/KANBAN/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +152,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;npm.KANBAN &gt; build:css.executor&quot;: &quot;Run&quot;,
     &quot;npm.KANBAN &gt; dev.executor&quot;: &quot;Run&quot;,
     &quot;npm.KANBAN &gt; dev:browser.executor&quot;: &quot;Run&quot;,
     &quot;npm.bench &gt; bench.executor&quot;: &quot;Run&quot;,
@@ -221,9 +190,9 @@
     &quot;npm.typecheck.executor&quot;: &quot;Run&quot;,
     &quot;npm.view-changes.executor&quot;: &quot;Run&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/agionoja/Code/remix/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/agionoja/Code/remix/node_modules/.pnpm/@typescript+native-preview@7.0.0-dev.20251125.1/node_modules/@typescript/native-preview-linux-x64/lib&quot;
+    &quot;ts.external.directory.path&quot;: &quot;/home/agionoja/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -243,6 +212,16 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.KANBAN &gt; dev">
+    <configuration name="KANBAN &gt; build:css" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/demos/KANBAN/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:css" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="KANBAN &gt; dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/demos/KANBAN/package.json" />
       <command value="run" />
@@ -286,6 +265,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.KANBAN &gt; dev" />
+        <item itemvalue="npm.KANBAN &gt; build:css" />
         <item itemvalue="npm.docs" />
         <item itemvalue="npm.docs:serve" />
         <item itemvalue="npm.component &gt; test" />
@@ -339,6 +319,12 @@
       <workItem from="1767300815508" duration="92000" />
       <workItem from="1767344353678" duration="10668000" />
       <workItem from="1767378584924" duration="41943000" />
+      <workItem from="1767902148235" duration="2500000" />
+      <workItem from="1767913123169" duration="10999000" />
+      <workItem from="1768030978137" duration="7098000" />
+      <workItem from="1768214433943" duration="4000" />
+      <workItem from="1768225803995" duration="8000" />
+      <workItem from="1768225831130" duration="1528000" />
     </task>
     <servers />
   </component>

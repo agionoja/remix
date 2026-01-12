@@ -1,3 +1,6 @@
+import { redirect } from 'remix'
+import type { Controller } from 'remix/fetch-router'
+
 import { flash } from '#/schema/flash'
 import { render } from '#/utils/render'
 import { ForgotPasswordView } from '#/views/auth/forgot-password.view'
@@ -5,13 +8,11 @@ import { LoginView } from '#/views/auth/login.view'
 import { RegisterView } from '#/views/auth/register.view'
 import { ResetPasswordView } from '#/views/auth/reset-password.view'
 import { routes } from '#/routes'
-import type { Controller } from '@remix-run/fetch-router'
-import { createRedirectResponse } from '@remix-run/response/redirect'
 
 export default {
   logout(ctx) {
     ctx.session.destroy()
-    return createRedirectResponse(routes.auth.login.index.href())
+    return redirect(routes.auth.login.index.href())
   },
 
   login: {
@@ -25,8 +26,8 @@ export default {
     },
 
     action(ctx) {
-      const redirectTo = ctx.url.searchParams.get('redirectTo')
-      return createRedirectResponse(routes.admin.dashboard.index.href())
+      const returnTo = ctx.url.searchParams.get('returnTo')
+      return redirect(routes.admin.dashboard.index.href())
     },
   },
 
@@ -46,7 +47,7 @@ export default {
     },
 
     action(ctx) {
-      return createRedirectResponse(
+      return redirect(
         routes.auth.resetPassword.index.href({ token: 'mixaicohl9eix2Uqu0xohDeaThaexoih' }),
       )
     },
@@ -66,7 +67,7 @@ export default {
         message: 'Password reset Successfully. Log in to continue.',
         type: 'warning',
       } as typeof flash.infer)
-      return createRedirectResponse(routes.auth.login.index.href())
+      return redirect(routes.auth.login.index.href())
     },
   },
 

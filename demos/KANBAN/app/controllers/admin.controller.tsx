@@ -8,7 +8,7 @@ import { render } from '#/utils/render'
 import { Layout } from '#/components/layout'
 import { createMeta } from '#/utils/meta'
 import type { routes } from '#/routes'
-import type { Controller } from '@remix-run/fetch-router'
+import type { Controller } from 'remixfetch-router'
 import { type } from 'arktype'
 
 export default {

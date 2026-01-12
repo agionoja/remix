@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import { env } from '#/utils/env'
 import * as http from 'node:http'
-import { createRequestListener } from '@remix-run/node-fetch-server'
+import { createRequestListener } from 'remix/node-fetch-server'
 import { router } from './router'
 
 let server = http.createServer(

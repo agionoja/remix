@@ -5,19 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8716a9-b3e6-48e3-9c59-622ff06378fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/stat-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/stat-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.dashboard.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.dashboard.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.inventory.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.inventory.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.orders.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.orders.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.report.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.report.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.store.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.store.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.suppliers.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.suppliers.controller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/auth.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth.controller.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/playground.controller.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/upload.controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/upload.controller.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/components.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/components.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.index.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.sales-purchases.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.sales-purchases.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.low-quantity.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.stock.low-quantity.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/dashboard.summary.view.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/meta.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/meta.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/render.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/render.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/session.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/session.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth/components.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/components.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/sessions/80/0dc3ef16ac4157a4467624decabd1d397477559c122013594e04692963853e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +116,7 @@
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
     &quot;npm.typecheck.executor&quot;: &quot;Run&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/agionoja/.nvm/versions/node/v24.11.1/lib/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/agionoja/Code/remix/node_modules/.pnpm/@typescript+native-preview@7.0.0-dev.20251125.1/node_modules/@typescript/native-preview-linux-x64/lib&quot;
   }
@@ -216,6 +224,13 @@
       <workItem from="1767031638128" duration="1232000" />
       <workItem from="1767091256439" duration="1249000" />
       <workItem from="1767133009028" duration="5832000" />
+      <workItem from="1768065098026" duration="9694000" />
+      <workItem from="1768197295988" duration="13000" />
+      <workItem from="1768198676368" duration="39000" />
+      <workItem from="1768198750798" duration="48000" />
+      <workItem from="1768209445764" duration="1548000" />
+      <workItem from="1768225752205" duration="21000" />
+      <workItem from="1768225788982" duration="39000" />
     </task>
     <servers />
   </component>

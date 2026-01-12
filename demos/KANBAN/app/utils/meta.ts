@@ -1,4 +1,4 @@
-import type { Remix } from '@remix-run/dom'
+import type { Remix } from 'remix/dom'
 
 type Meta = Remix.Props<'meta'>
 

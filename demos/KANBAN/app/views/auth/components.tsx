@@ -5,7 +5,7 @@ import { Label } from '#/components/input'
 import type { Flash } from '#/schema/flash'
 import { css } from '#/utils/css'
 import type { Remix } from '@remix-run/dom'
-import type { RequestMethod } from '@remix-run/fetch-router'
+import type { RequestMethod } from 'remix/fetch-router'
 
 export function AuthLayout({ children }: { children: Remix.RemixNode }) {
   return (

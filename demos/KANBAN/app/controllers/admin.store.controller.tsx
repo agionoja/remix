@@ -4,7 +4,7 @@ import { StoreIndexView } from '#/views/admin/store/store.index.view'
 import { StoreNewView } from '#/views/admin/store/store.new.view'
 import { StoreShowView } from '#/views/admin/store/store.show.view'
 import type { routes } from '#/routes'
-import type { Controller } from '@remix-run/fetch-router'
+import type { Controller } from 'remixfetch-router'
 
 export default {
   index(ctx) {

@@ -4,7 +4,7 @@ import { ReportBestsellingProductView } from '#/views/admin/report/report.bestse
 import { ReportIndexView } from '#/views/admin/report/report.index.view'
 import { ReportProfitRevenue } from '#/views/admin/report/report.profit-revenue'
 import type { routes } from '#/routes'
-import type { Controller } from '@remix-run/fetch-router'
+import type { Controller } from 'remixfetch-router'
 
 export default {
   index(ctx) {

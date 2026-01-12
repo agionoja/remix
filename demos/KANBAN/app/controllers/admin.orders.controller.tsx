@@ -6,7 +6,7 @@ import { OrdersItemsNewView } from '#/views/admin/orders/orders.items.new.view'
 import { OrdersItemsShowView } from '#/views/admin/orders/orders.items.show.view'
 import { OrdersSummaryView } from '#/views/admin/orders/orders.summary.view'
 import type { routes } from '#/routes'
-import type { Controller } from '@remix-run/fetch-router'
+import type { Controller } from 'remixfetch-router'
 
 export default {
   summary(ctx) {

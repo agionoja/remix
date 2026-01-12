@@ -8,11 +8,19 @@ type IconProps = {
   color?: string
   style?: CSS | string
   css?: CSS
+  [key: string]: any // Added to allow any other svg props
 }
 
 export function CalenderIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      width="20"
+      height="20"
+      fill="none"
+      {...props}
+    >
       <path
         fill="#5D6679"
         d="M18.387 1.947H16.29v-.531c0-.506-.246-.973-.645-1.226a1.192 1.192 0 0 0-1.29 0c-.4.253-.645.72-.645 1.226v.53H6.29v-.53C6.29.91 6.044.443 5.645.19a1.192 1.192 0 0 0-1.29 0c-.4.253-.645.72-.645 1.226v.53H1.613c-.428 0-.838.187-1.14.52A1.862 1.862 0 0 0 0 3.715V18.23c0 .47.17.92.472 1.252.303.332.713.518 1.14.518h16.775c.428 0 .838-.186 1.14-.518.303-.332.473-.783.473-1.252V3.717c0-.47-.17-.92-.472-1.252a1.545 1.545 0 0 0-1.14-.518Zm-4.032-.531c0-.253.123-.487.322-.613a.596.596 0 0 1 .645 0c.2.126.323.36.323.613V3.54a.723.723 0 0 1-.323.613.596.596 0 0 1-.645 0 .723.723 0 0 1-.322-.613V1.416Zm-10 0c0-.253.123-.487.322-.613a.596.596 0 0 1 .645 0c.2.126.323.36.323.613V3.54a.723.723 0 0 1-.323.613.596.596 0 0 1-.645 0 .723.723 0 0 1-.322-.613V1.416ZM1.613 2.655h2.096v.885c0 .506.246.973.646 1.226.399.253.89.253 1.29 0s.645-.72.645-1.226v-.885h7.42v.885c0 .506.245.973.645 1.226.399.253.89.253 1.29 0s.645-.72.645-1.226v-.885h2.097c.256 0 .503.112.684.31.182.2.284.47.284.752v2.655H.645V3.717c0-.282.102-.552.283-.751a.927.927 0 0 1 .685-.311Zm16.774 16.637H1.613a.926.926 0 0 1-.685-.311c-.181-.2-.283-.47-.283-.75V7.08h18.71v11.15c0 .282-.102.552-.284.751a.927.927 0 0 1-.684.311Z"
@@ -23,7 +31,14 @@ export function CalenderIcon(props: IconProps) {
 
 export function ReportIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      {...props}
+    >
       <path
         fill={'currentColor'}
         d="M16.445 20.889v-8.085c0-.303.257-.549.555-.549.307 0 .556.24.556.549v8.085h1.119a2.223 2.223 0 0 0 2.214-2.214V5.325a2.223 2.223 0 0 0-2.214-2.214H5.325a2.223 2.223 0 0 0-2.214 2.214v13.35c0 1.214.997 2.214 2.214 2.214h1.12V15.59c0-.312.257-.566.555-.566.307 0 .556.246.556.566v5.299h2.222V10.038a.56.56 0 0 1 .555-.551c.307 0 .556.237.556.55V20.89h2.222V5.886a.56.56 0 0 1 .556-.553c.307 0 .555.248.555.553V20.89h2.223ZM2 5.325A3.334 3.334 0 0 1 5.325 2h13.35A3.334 3.334 0 0 1 22 5.325v13.35A3.334 3.334 0 0 1 18.675 22H5.325A3.334 3.334 0 0 1 2 18.675V5.325Z"
@@ -34,7 +49,14 @@ export function ReportIcon(props: IconProps) {
 
 export function LogoutIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      {...props}
+    >
       <path
         fill="currentColor"
         d="M12.565 21.645h-7.47a.454.454 0 0 1-.45-.458V3.113c0-.252.202-.458.45-.458h7.47a.325.325 0 0 0 .323-.328.325.325 0 0 0-.323-.327h-7.47C4.49 2 4 2.5 4 3.113v18.074c0 .614.491 1.113 1.095 1.113h7.47a.325.325 0 0 0 .323-.327.325.325 0 0 0-.323-.328Zm7.585-9.726-4.425-4.492a.32.32 0 0 0-.457 0 .33.33 0 0 0 0 .463l3.875 3.933H8.613a.325.325 0 0 0-.323.327c0 .18.144.327.322.327h10.531l-3.875 3.933a.33.33 0 0 0 0 .463.318.318 0 0 0 .457 0l4.425-4.491a.33.33 0 0 0 0-.463Z"
@@ -45,7 +67,14 @@ export function LogoutIcon(props: IconProps) {
 
 export function SearchIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      {...props}
+    >
       <path
         fill="#5D6679"
         d="m21.727 20.41-4.787-4.787a.928.928 0 0 0-.897-.239l-1.027-1.027a7.404 7.404 0 0 0 1.868-4.915C16.884 5.34 13.546 2 9.444 2 5.338 2 2 5.339 2 9.443c0 4.104 3.338 7.442 7.443 7.442 1.884 0 3.602-.71 4.915-1.869l1.027 1.028a.928.928 0 0 0 .238.897l4.787 4.786a.928.928 0 0 0 1.317 0 .932.932 0 0 0 0-1.318ZM2.932 9.442c0-3.59 2.92-6.511 6.51-6.511s6.51 2.92 6.51 6.51-2.92 6.511-6.51 6.511-6.51-2.92-6.51-6.51Z"
@@ -56,7 +85,14 @@ export function SearchIcon(props: IconProps) {
 
 export function BagIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 25"
+      width="20"
+      height="25"
+      fill="none"
+      {...props}
+    >
       <path
         fill="#009ED8"
         d="M18.505 5.48c-.036-.327-.29-.581-.617-.581h-3.011C14.877 2.213 12.663 0 9.978 0A4.901 4.901 0 0 0 5.08 4.899H2.068c-.326 0-.58.254-.617.58L0 21.662v.073C0 23.549 1.67 25 3.701 25h12.554c2.032 0 3.701-1.451 3.701-3.265v-.073l-1.45-16.183ZM9.978 1.27A3.64 3.64 0 0 1 13.607 4.9H6.35A3.64 3.64 0 0 1 9.978 1.27Zm6.277 22.496H3.701c-1.342 0-2.431-.907-2.467-1.995L2.613 6.168H5.08v2.178c0 .326.29.616.617.616.326 0 .616-.29.616-.616V6.168h7.294v2.178c0 .326.29.616.616.616.327 0 .617-.29.617-.616V6.168h2.467l1.38 15.603c0 1.088-1.089 1.995-2.431 1.995Z"
@@ -67,7 +103,14 @@ export function BagIcon(props: IconProps) {
 
 export function HomeIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      {...props}
+    >
       <path
         stroke="currentColor"
         stroke-width="1.5"
@@ -79,7 +122,14 @@ export function HomeIcon(props: IconProps) {
 
 export function InventoryIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      {...props}
+    >
       <path
         fill="currentColor"
         stroke="currentColor"
@@ -92,7 +142,14 @@ export function InventoryIcon(props: IconProps) {
 
 export function OrderIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      {...props}
+    >
       <path
         fill="currentColor"
         stroke="currentColor"
@@ -105,7 +162,14 @@ export function OrderIcon(props: IconProps) {
 
 export function NotificationIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      {...props}
+    >
       <path
         stroke={'currentColor'}
         stroke-linecap="round"
@@ -119,7 +183,14 @@ export function NotificationIcon(props: IconProps) {
 
 export function LogoIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      width="48"
+      height="48"
+      fill="none"
+      {...props}
+    >
       <path fill={'#009ED8'} d="M24 3.974 44.785 14.98v22.013L24 48 3.215 36.993V14.98L24 3.974Z" />
       <path
         fill={'#0ACF83'}
@@ -153,7 +224,14 @@ export function UserIcon(props: IconProps) {
 
 export function LocationIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 30 30"
+      width="30"
+      height="30"
+      fill="none"
+      {...props}
+    >
       <rect width="30" height="30" fill="#ECEAFF" rx="4" />
       <path
         fill="#817AF3"
@@ -171,7 +249,14 @@ export function LocationIcon(props: IconProps) {
 
 export function StoreIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      {...props}
+    >
       <path
         fill="currentColor"
         d="M11.023 17.855H9.649c-.092 0-.153.06-.153.152s.061.153.153.153h1.374c.091 0 .153-.061.153-.152a.164.164 0 0 0-.153-.153Z"
@@ -210,7 +295,14 @@ export function OderIcon(props: IconProps) {
 
 export function QuantityIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 30 30"
+      width="30"
+      height="30"
+      fill="none"
+      {...props}
+    >
       <rect width="30" height="30" fill="#FFEEDB" rx="4" />
       <path
         fill="#DBA362"
@@ -251,7 +343,14 @@ export function SidebarIcon(props: IconProps) {
 
 export function ProfitIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 30 30"
+      width="30"
+      height="30"
+      fill="none"
+      {...props}
+    >
       <rect width="30" height="30" fill="#FFEEDB" rx="4" />
       <path
         fill="#DBA362"
@@ -273,7 +372,14 @@ export function ProfitIcon(props: IconProps) {
 
 export function SettingsIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      {...props}
+    >
       <g
         stroke={'currentColor'}
         stroke-linecap="round"
@@ -295,7 +401,14 @@ export function SettingsIcon(props: IconProps) {
 
 export function CategoriesIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 30 30"
+      width="30"
+      height="30"
+      fill="none"
+      {...props}
+    >
       <rect width="30" height="30" fill="#E7E5FF" rx="4" />
       <path
         fill="#817AF3"
@@ -317,7 +430,14 @@ export function CategoriesIcon(props: IconProps) {
 
 export function RevenueIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 30 30"
+      width="30"
+      height="30"
+      fill="none"
+      {...props}
+    >
       <rect width="30" height="30" fill="#ECEAFF" rx="4" />
       <mask id="a" width="27" height="25" x="2" y="2" fill="#000" maskUnits="userSpaceOnUse">
         <path fill="#fff" d="M2 2h27v25H2z" />
@@ -325,11 +445,6 @@ export function RevenueIcon(props: IconProps) {
       </mask>
       <path
         fill="#817AF3"
-        d="M18.781 15.214h-6.563a.35.35 0 0 0-.35.35v10.88c0 .193.157.35.35.35h6.563a.35.35 0 0 0 .35-.35v-10.88a.35.35 0 0 0-.35-.35Zm-6.212 5.417v-1.115h5.863v1.115h-5.863Zm5.862.7v1.115h-5.863V21.33h5.864Zm-5.863-2.515V17.7h5.864v1.116h-5.863Zm0 4.33h5.864v1.116h-5.863v-1.116Zm5.864-7.232v1.087h-5.863v-1.087h5.862Zm-5.863 10.18V24.96h5.863v1.133h-5.863ZM27.65 9.773h-6.563a.35.35 0 0 0-.35.35v16.32c0 .192.157.35.35.35h6.563a.35.35 0 0 0 .35-.35v-16.32a.35.35 0 0 0-.35-.35Zm-6.213 9.04V17.7h5.864v1.116h-5.864Zm5.864.7v1.116h-5.864v-1.115h5.864ZM21.437 17v-1.116h5.864V17h-5.864Zm0-1.815v-1.116h5.864v1.116h-5.864Zm0 6.145h5.864v1.116h-5.864V21.33Zm5.864-7.96h-5.864v-1.116h5.864v1.115Zm-5.864 9.775h5.864v1.116h-5.864v-1.116Zm5.864-12.671v1.08h-5.864v-1.08h5.864Zm-5.864 15.62V24.96h5.864v1.132h-5.864Zm-11.524-5.44H3.35a.35.35 0 0 0-.35.35v5.44c0 .193.157.35.35.35h6.563a.35.35 0 0 0 .35-.35v-5.44a.35.35 0 0 0-.35-.35ZM3.7 23.166h5.863v1.114H3.7v-1.114Zm5.863-1.813v1.114H3.7v-1.114h5.863ZM3.7 26.093V24.98h5.863v1.113H3.7Zm12.963-14.425L24.632 3.7h-3.66a.35.35 0 0 1 0-.7h4.505a.35.35 0 0 1 .35.35v4.505a.35.35 0 0 1-.7 0v-3.66l-8.216 8.216a.35.35 0 0 1-.495 0l-2.6-2.6-8.044 8.044a.35.35 0 1 1-.495-.495L13.57 9.07a.35.35 0 0 1 .495 0l2.6 2.6Z"
-      />
-      <path
-        stroke="#817AF3"
-        stroke-width=".2"
         d="M18.781 15.214h-6.563a.35.35 0 0 0-.35.35v10.88c0 .193.157.35.35.35h6.563a.35.35 0 0 0 .35-.35v-10.88a.35.35 0 0 0-.35-.35Zm-6.212 5.417v-1.115h5.863v1.115h-5.863Zm5.862.7v1.115h-5.863V21.33h5.864Zm-5.863-2.515V17.7h5.864v1.116h-5.863Zm0 4.33h5.864v1.116h-5.863v-1.116Zm5.864-7.232v1.087h-5.863v-1.087h5.862Zm-5.863 10.18V24.96h5.863v1.133h-5.863ZM27.65 9.773h-6.563a.35.35 0 0 0-.35.35v16.32c0 .192.157.35.35.35h6.563a.35.35 0 0 0 .35-.35v-16.32a.35.35 0 0 0-.35-.35Zm-6.213 9.04V17.7h5.864v1.116h-5.864Zm5.864.7v1.116h-5.864v-1.115h5.864ZM21.437 17v-1.116h5.864V17h-5.864Zm0-1.815v-1.116h5.864v1.116h-5.864Zm0 6.145h5.864v1.116h-5.864V21.33Zm5.864-7.96h-5.864v-1.116h5.864v1.115Zm-5.864 9.775h5.864v1.116h-5.864v-1.116Zm5.864-12.671v1.08h-5.864v-1.08h5.864Zm-5.864 15.62V24.96h5.864v1.132h-5.864Zm-11.524-5.44H3.35a.35.35 0 0 0-.35.35v5.44c0 .193.157.35.35.35h6.563a.35.35 0 0 0 .35-.35v-5.44a.35.35 0 0 0-.35-.35ZM3.7 23.166h5.863v1.114H3.7v-1.114Zm5.863-1.813v1.114H3.7v-1.114h5.863ZM3.7 26.093V24.98h5.863v1.113H3.7Zm12.963-14.425L24.632 3.7h-3.66a.35.35 0 0 1 0-.7h4.505a.35.35 0 0 1 .35.35v4.505a.35.35 0 0 1-.7 0v-3.66l-8.216 8.216a.35.35 0 0 1-.495 0l-2.6-2.6-8.044 8.044a.35.35 0 1 1-.495-.495L13.57 9.07a.35.35 0 0 1 .495 0l2.6 2.6Z"
         mask="url(#a)"
       />
@@ -339,7 +454,14 @@ export function RevenueIcon(props: IconProps) {
 
 export function CancelIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 30 30"
+      width="30"
+      height="30"
+      fill="none"
+      {...props}
+    >
       <rect width="30" height="30" fill="#E7E5FF" rx="4" />
       <path
         fill="#817AF3"
@@ -363,7 +485,14 @@ export function CancelIcon(props: IconProps) {
 
 export function CostIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 30 30"
+      width="30"
+      height="30"
+      fill="none"
+      {...props}
+    >
       <rect width="30" height="30" fill="#EBFFED" rx="4" />
       <path
         fill="#58D365"
@@ -391,7 +520,14 @@ export function CostIcon(props: IconProps) {
 
 export function GoogleIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      {...props}
+    >
       <g clip-path="url(#a)">
         <path
           fill="#4285F4"
@@ -421,7 +557,14 @@ export function GoogleIcon(props: IconProps) {
 
 export function SalesIcon(props: IconProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" fill="none" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 25 23"
+      width="25"
+      height="23"
+      fill="none"
+      {...props}
+    >
       <path
         fill="#629FF4"
         d="M16.12 4.605a2.303 2.303 0 1 0 0-4.606 2.303 2.303 0 0 0 0 4.606Zm0-3.29a.987.987 0 1 1-.001 1.974.987.987 0 0 1 0-1.973ZM19.737 6.907a2.302 2.302 0 1 0 4.605 0 2.302 2.302 0 0 0-4.605 0Zm3.29 0a.986.986 0 1 1-1.973 0 .986.986 0 0 1 1.973 0ZM15.728 8.916a.657.657 0 0 0 .921-.138l5.592-7.565a.659.659 0 0 0-1.06-.782L15.59 7.996a.657.657 0 0 0 .138.92ZM5.594 5.592c-.934 0-5.592.095-5.592 1.973 0 1.878 4.658 1.974 5.592 1.974.934 0 5.591-.096 5.591-1.974S6.528 5.592 5.594 5.592Zm0 2.631c-2.197 0-3.618-.378-4.131-.658.513-.28 1.934-.658 4.13-.658 2.198 0 3.619.379 4.132.658-.513.28-1.934.658-4.131.658Z"

@@ -4,7 +4,7 @@ import { Layout } from '#/components/layout'
 import { render } from '#/utils/render'
 import { routes } from '#/routes'
 import { Frame } from '@remix-run/dom'
-import type { BuildAction } from '@remix-run/fetch-router'
+import type { BuildAction } from 'remix/fetch-router'
 import {
   StatCard,
   StatCardContent,
